@@ -1,6 +1,6 @@
 /**
- * main.js - Global App Controller, Navigation & White/Dark Theme Toggle
- * NEXURA Creative Agency
+ * main.js - Global App Controller, Navigation & Dark/Light Theme Toggle
+ * NEXURA Creative Agency (Default: Luxury Dark Theme)
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -15,17 +15,17 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /* --------------------------------------------------------------------------
-   0. THEME SWITCHER (DEFAULT: WHITE / LIGHT THEME)
+   0. THEME SWITCHER (DEFAULT: LUXURY DARK THEME)
    -------------------------------------------------------------------------- */
 function initThemeToggle() {
-  const savedTheme = localStorage.getItem('nexura-theme') || 'light';
+  const savedTheme = localStorage.getItem('nexura-theme') || 'dark';
   applyTheme(savedTheme);
 
   const toggleBtns = document.querySelectorAll('.theme-toggle-btn');
   toggleBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-      const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
-      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+      const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
       applyTheme(newTheme);
       localStorage.setItem('nexura-theme', newTheme);
     });
@@ -68,10 +68,11 @@ function initStickyNavbar() {
 
   window.addEventListener('scroll', () => {
     if (window.scrollY > 30) {
-      navbar.classList.add('shadow-lg', 'shadow-slate-900/5', 'border-b');
-      navbar.style.backdropFilter = 'blur(20px)';
+      navbar.classList.add('shadow-xl', 'shadow-black/50', 'border-b', 'border-white/10', 'bg-[#07080d]/90');
+      navbar.classList.remove('bg-transparent', 'border-transparent');
     } else {
-      navbar.classList.remove('shadow-lg', 'shadow-slate-900/5');
+      navbar.classList.remove('shadow-xl', 'shadow-black/50', 'border-b', 'border-white/10', 'bg-[#07080d]/90');
+      navbar.classList.add('bg-transparent', 'border-transparent');
     }
   });
 }
@@ -144,14 +145,14 @@ function initLegalModals() {
       e.preventDefault();
       modalTitle.textContent = 'Privacy Policy';
       modalBody.innerHTML = `
-        <div class="space-y-4 text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+        <div class="space-y-4 text-slate-300 text-sm leading-relaxed">
           <p><strong>Effective Date:</strong> January 2026</p>
           <p>At <strong>NEXURA Creative & Growth Agency</strong>, your privacy is a paramount priority. We are committed to protecting the personal and business information you share with us.</p>
-          <h4 class="text-slate-900 dark:text-white font-bold text-base mt-4">1. Information We Collect</h4>
+          <h4 class="text-white font-bold text-base mt-4">1. Information We Collect</h4>
           <p>We collect information provided directly through our contact forms, project estimators, and strategy sessions, including your name, corporate email, phone number, and marketing campaign goals.</p>
-          <h4 class="text-slate-900 dark:text-white font-bold text-base mt-4">2. How We Use Information</h4>
+          <h4 class="text-white font-bold text-base mt-4">2. How We Use Information</h4>
           <p>Your details are used exclusively to deliver customized digital marketing proposals, schedule consultation calls, execute approved creative campaigns, and communicate project deliverables. We never sell or lease your information to third-party data brokers.</p>
-          <h4 class="text-slate-900 dark:text-white font-bold text-base mt-4">3. Data Security & Confidentiality</h4>
+          <h4 class="text-white font-bold text-base mt-4">3. Data Security & Confidentiality</h4>
           <p>All client proprietary strategies, ad accounts, creative collateral, and analytical data are safeguarded with enterprise-grade encryption and stringent non-disclosure standards.</p>
         </div>
       `;
@@ -164,14 +165,14 @@ function initLegalModals() {
       e.preventDefault();
       modalTitle.textContent = 'Terms & Conditions';
       modalBody.innerHTML = `
-        <div class="space-y-4 text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+        <div class="space-y-4 text-slate-300 text-sm leading-relaxed">
           <p><strong>Last Updated:</strong> January 2026</p>
           <p>Welcome to <strong>NEXURA Creative Agency</strong>. By accessing our website and engaging our services, you agree to the following operational terms:</p>
-          <h4 class="text-slate-900 dark:text-white font-bold text-base mt-4">1. Scope of Creative & Marketing Deliverables</h4>
+          <h4 class="text-white font-bold text-base mt-4">1. Scope of Creative & Marketing Deliverables</h4>
           <p>All creative deliverables, ad management timelines, and strategy milestones are tailored to client agreements documented in individual Statements of Work (SOW).</p>
-          <h4 class="text-slate-900 dark:text-white font-bold text-base mt-4">2. Intellectual Property Rights</h4>
+          <h4 class="text-white font-bold text-base mt-4">2. Intellectual Property Rights</h4>
           <p>Upon final settlement of invoices, all finalized brand identities, graphic assets, and custom design collateral transfer full ownership rights to the client, while NEXURA retains the right to display non-confidential deliverables for portfolio and case study presentation.</p>
-          <h4 class="text-slate-900 dark:text-white font-bold text-base mt-4">3. Performance Disclaimers</h4>
+          <h4 class="text-white font-bold text-base mt-4">3. Performance Disclaimers</h4>
           <p>While our data-driven strategies consistently outperform industry benchmarks, external ad platform algorithms (Meta, Google, TikTok) are subject to third-party dynamics. Performance targets represent rigorous projections based on historical data.</p>
         </div>
       `;
@@ -215,14 +216,14 @@ function initNewsletter() {
     if (!emailRegex.test(email)) {
       if (feedback) {
         feedback.textContent = 'Please enter a valid email address';
-        feedback.className = 'text-xs text-rose-500 mt-2 block font-medium';
+        feedback.className = 'text-xs text-rose-400 mt-2 block font-medium';
       }
       return;
     }
 
     if (feedback) {
       feedback.textContent = '✓ You are subscribed to Agency Growth Insights!';
-      feedback.className = 'text-xs text-emerald-600 dark:text-emerald-400 mt-2 block font-medium';
+      feedback.className = 'text-xs text-emerald-400 mt-2 block font-medium';
     }
     input.value = '';
   });
