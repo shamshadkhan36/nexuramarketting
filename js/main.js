@@ -1,54 +1,18 @@
 /**
- * main.js - Global App Controller, Navigation & Dark/Light Theme Toggle
- * NEXURA Creative Agency (Default: Luxury Dark Theme)
+ * main.js - AGENCEE Interactive Controller
+ * Handles Navigation, Video Modal, Mobile Drawer & Global Actions
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  initThemeToggle();
   initLucideIcons();
   initStickyNavbar();
   initMobileMenu();
+  initVideoModal();
   initBackToTop();
-  initLegalModals();
   initNewsletter();
   initSmoothScrollLinks();
+  initContactForm();
 });
-
-/* --------------------------------------------------------------------------
-   0. THEME SWITCHER (DEFAULT: LUXURY DARK THEME)
-   -------------------------------------------------------------------------- */
-function initThemeToggle() {
-  const savedTheme = localStorage.getItem('nexura-theme') || 'dark';
-  applyTheme(savedTheme);
-
-  const toggleBtns = document.querySelectorAll('.theme-toggle-btn');
-  toggleBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
-      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-      applyTheme(newTheme);
-      localStorage.setItem('nexura-theme', newTheme);
-    });
-  });
-}
-
-function applyTheme(theme) {
-  document.documentElement.setAttribute('data-theme', theme);
-  
-  // Update theme toggle button icons
-  const toggleIcons = document.querySelectorAll('.theme-toggle-icon');
-  toggleIcons.forEach(icon => {
-    if (theme === 'dark') {
-      icon.setAttribute('data-lucide', 'sun');
-    } else {
-      icon.setAttribute('data-lucide', 'moon');
-    }
-  });
-
-  if (window.lucide) {
-    window.lucide.createIcons();
-  }
-}
 
 /* --------------------------------------------------------------------------
    1. LUCIDE ICONS INITIALIZATION
@@ -68,11 +32,11 @@ function initStickyNavbar() {
 
   window.addEventListener('scroll', () => {
     if (window.scrollY > 30) {
-      navbar.classList.add('shadow-xl', 'shadow-black/50', 'border-b', 'border-white/10', 'bg-[#07080d]/90');
-      navbar.classList.remove('bg-transparent', 'border-transparent');
+      navbar.classList.add('py-3');
+      navbar.classList.remove('py-5');
     } else {
-      navbar.classList.remove('shadow-xl', 'shadow-black/50', 'border-b', 'border-white/10', 'bg-[#07080d]/90');
-      navbar.classList.add('bg-transparent', 'border-transparent');
+      navbar.classList.add('py-5');
+      navbar.classList.remove('py-3');
     }
   });
 }
@@ -107,7 +71,54 @@ function initMobileMenu() {
 }
 
 /* --------------------------------------------------------------------------
-   4. BACK TO TOP BUTTON
+   4. VIDEO MODAL PLAYER (FOR PLAY VIDEO BADGE)
+   -------------------------------------------------------------------------- */
+function initVideoModal() {
+  const playTriggers = document.querySelectorAll('.play-video-trigger');
+  const videoModal = document.getElementById('video-modal');
+  const closeVideoBtn = document.getElementById('close-video-modal');
+  const iframeContainer = document.getElementById('video-iframe-container');
+
+  if (!videoModal || !closeVideoBtn) return;
+
+  playTriggers.forEach(trigger => {
+    trigger.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (iframeContainer) {
+        // Embed high quality creative agency showreel
+        iframeContainer.innerHTML = `
+          <div class="relative w-full aspect-video rounded-2xl overflow-hidden bg-black shadow-2xl">
+            <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?autoplay=1&mute=0" title="Agency Showreel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        `;
+      }
+      videoModal.classList.remove('hidden');
+      videoModal.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  function closeVideo() {
+    videoModal.classList.add('hidden');
+    videoModal.classList.remove('flex');
+    if (iframeContainer) iframeContainer.innerHTML = '';
+    document.body.style.overflow = 'auto';
+  }
+
+  closeVideoBtn.addEventListener('click', closeVideo);
+  videoModal.addEventListener('click', (e) => {
+    if (e.target === videoModal) closeVideo();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !videoModal.classList.contains('hidden')) {
+      closeVideo();
+    }
+  });
+}
+
+/* --------------------------------------------------------------------------
+   5. BACK TO TOP BUTTON
    -------------------------------------------------------------------------- */
 function initBackToTop() {
   const backToTopBtn = document.getElementById('back-to-top');
@@ -127,79 +138,61 @@ function initBackToTop() {
 }
 
 /* --------------------------------------------------------------------------
-   5. LEGAL MODALS (Privacy Policy & Terms)
+   6. CONTACT FORM VALIDATION & DIRECT ACTIONS
    -------------------------------------------------------------------------- */
-function initLegalModals() {
-  const legalModal = document.getElementById('legal-modal');
-  const modalTitle = document.getElementById('legal-modal-title');
-  const modalBody = document.getElementById('legal-modal-body');
-  const closeBtn = document.getElementById('close-legal-modal');
+function initContactForm() {
+  const form = document.getElementById('agency-contact-form');
+  const submitBtn = document.getElementById('form-submit-btn');
 
-  const privacyTriggers = document.querySelectorAll('[data-open-privacy]');
-  const termsTriggers = document.querySelectorAll('[data-open-terms]');
+  if (!form || !submitBtn) return;
 
-  if (!legalModal || !modalTitle || !modalBody) return;
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const nameInput = document.getElementById('contact-name');
+    const emailInput = document.getElementById('contact-email');
 
-  privacyTriggers.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      modalTitle.textContent = 'Privacy Policy';
-      modalBody.innerHTML = `
-        <div class="space-y-4 text-slate-300 text-sm leading-relaxed">
-          <p><strong>Effective Date:</strong> January 2026</p>
-          <p>At <strong>NEXURA Creative & Growth Agency</strong>, your privacy is a paramount priority. We are committed to protecting the personal and business information you share with us.</p>
-          <h4 class="text-white font-bold text-base mt-4">1. Information We Collect</h4>
-          <p>We collect information provided directly through our contact forms, project estimators, and strategy sessions, including your name, corporate email, phone number, and marketing campaign goals.</p>
-          <h4 class="text-white font-bold text-base mt-4">2. How We Use Information</h4>
-          <p>Your details are used exclusively to deliver customized digital marketing proposals, schedule consultation calls, execute approved creative campaigns, and communicate project deliverables. We never sell or lease your information to third-party data brokers.</p>
-          <h4 class="text-white font-bold text-base mt-4">3. Data Security & Confidentiality</h4>
-          <p>All client proprietary strategies, ad accounts, creative collateral, and analytical data are safeguarded with enterprise-grade encryption and stringent non-disclosure standards.</p>
-        </div>
-      `;
-      openModal();
-    });
+    if (!nameInput.value.trim() || !emailInput.value.trim()) {
+      alert('Please enter your Name and Work Email to continue.');
+      return;
+    }
+
+    const origHtml = submitBtn.innerHTML;
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = `
+      <svg class="animate-spin -ml-1 mr-2 h-4 w-4 text-black inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+      </svg>
+      Submitting...
+    `;
+
+    setTimeout(() => {
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = origHtml;
+      const successModal = document.getElementById('inquiry-success-modal');
+      const nameSpan = document.getElementById('success-user-name');
+      if (nameSpan) nameSpan.textContent = nameInput.value;
+      if (successModal) {
+        successModal.classList.remove('hidden');
+        successModal.classList.add('flex');
+      }
+      form.reset();
+    }, 1000);
   });
 
-  termsTriggers.forEach(btn => {
+  // Direct WhatsApp Button
+  const waButtons = document.querySelectorAll('.direct-whatsapp-btn');
+  waButtons.forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
-      modalTitle.textContent = 'Terms & Conditions';
-      modalBody.innerHTML = `
-        <div class="space-y-4 text-slate-300 text-sm leading-relaxed">
-          <p><strong>Last Updated:</strong> January 2026</p>
-          <p>Welcome to <strong>NEXURA Creative Agency</strong>. By accessing our website and engaging our services, you agree to the following operational terms:</p>
-          <h4 class="text-white font-bold text-base mt-4">1. Scope of Creative & Marketing Deliverables</h4>
-          <p>All creative deliverables, ad management timelines, and strategy milestones are tailored to client agreements documented in individual Statements of Work (SOW).</p>
-          <h4 class="text-white font-bold text-base mt-4">2. Intellectual Property Rights</h4>
-          <p>Upon final settlement of invoices, all finalized brand identities, graphic assets, and custom design collateral transfer full ownership rights to the client, while NEXURA retains the right to display non-confidential deliverables for portfolio and case study presentation.</p>
-          <h4 class="text-white font-bold text-base mt-4">3. Performance Disclaimers</h4>
-          <p>While our data-driven strategies consistently outperform industry benchmarks, external ad platform algorithms (Meta, Google, TikTok) are subject to third-party dynamics. Performance targets represent rigorous projections based on historical data.</p>
-        </div>
-      `;
-      openModal();
+      const msg = encodeURIComponent("Hi AGENCEE Team! I want to discuss a Digital Marketing and Branding project.");
+      window.open(`https://wa.me/18005550199?text=${msg}`, '_blank');
     });
-  });
-
-  function openModal() {
-    legalModal.classList.remove('hidden');
-    legalModal.classList.add('flex');
-    document.body.style.overflow = 'hidden';
-  }
-
-  function closeModal() {
-    legalModal.classList.add('hidden');
-    legalModal.classList.remove('flex');
-    document.body.style.overflow = 'auto';
-  }
-
-  if (closeBtn) closeBtn.addEventListener('click', closeModal);
-  legalModal.addEventListener('click', (e) => {
-    if (e.target === legalModal) closeModal();
   });
 }
 
 /* --------------------------------------------------------------------------
-   6. NEWSLETTER SUBSCRIPTION
+   7. NEWSLETTER SUBSCRIPTION
    -------------------------------------------------------------------------- */
 function initNewsletter() {
   const form = document.getElementById('newsletter-form');
@@ -211,26 +204,18 @@ function initNewsletter() {
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     const email = input.value.trim();
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-    if (!emailRegex.test(email)) {
-      if (feedback) {
-        feedback.textContent = 'Please enter a valid email address';
-        feedback.className = 'text-xs text-rose-400 mt-2 block font-medium';
-      }
-      return;
-    }
+    if (!email) return;
 
     if (feedback) {
-      feedback.textContent = '✓ You are subscribed to Agency Growth Insights!';
-      feedback.className = 'text-xs text-emerald-400 mt-2 block font-medium';
+      feedback.textContent = '✓ Subscribed! Welcome to our exclusive agency insights.';
+      feedback.className = 'text-xs text-[#ff7a00] mt-2 block font-bold';
     }
     input.value = '';
   });
 }
 
 /* --------------------------------------------------------------------------
-   7. SMOOTH SCROLL FOR IN-PAGE ANCHORS
+   8. SMOOTH SCROLL ANCHORS
    -------------------------------------------------------------------------- */
 function initSmoothScrollLinks() {
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -241,7 +226,7 @@ function initSmoothScrollLinks() {
       const targetEl = document.querySelector(targetId);
       if (targetEl) {
         e.preventDefault();
-        const headerOffset = 80;
+        const headerOffset = 90;
         const elementPosition = targetEl.getBoundingClientRect().top;
         const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
@@ -249,6 +234,10 @@ function initSmoothScrollLinks() {
           top: offsetPosition,
           behavior: 'smooth'
         });
+
+        // Update active class on nav pills
+        document.querySelectorAll('.nav-pill-link').forEach(l => l.classList.remove('active'));
+        this.classList.add('active');
       }
     });
   });
