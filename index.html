@@ -30,13 +30,13 @@
         extend: {
           colors: {
             agencee: {
-              black: '#070709',
-              dark: '#0d0d10',
-              card: '#121316',
-              cardHover: '#17181c',
-              orange: '#ff7a00',
-              orangeLight: '#ff8c1a',
-              amber: '#ffa800'
+              black: '#05070b',
+              dark: '#0a0d14',
+              card: '#0e121a',
+              cardHover: '#131824',
+              blue: '#0ea5e9',
+              cyan: '#06b6d4',
+              electric: '#2563eb'
             }
           },
           fontFamily: {
@@ -55,7 +55,7 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body class="bg-[#070709] text-white antialiased selection:bg-[#ff7a00]/30 selection:text-white relative bg-arched-pattern">
+<body class="bg-[#05070b] text-white antialiased selection:bg-[#0ea5e9]/30 selection:text-white relative bg-arched-pattern">
 
   <!-- ==========================================================================
        STICKY FLOATING NAVBAR
@@ -65,7 +65,7 @@
       
       <!-- Brand Logo -->
       <a href="#" class="flex items-center gap-2.5 group">
-        <div class="w-8 h-8 flex items-center justify-center text-[#ff7a00] group-hover:scale-110 transition-transform">
+        <div class="w-8 h-8 flex items-center justify-center text-[#0ea5e9] group-hover:scale-110 transition-transform">
           <svg class="w-8 h-8 fill-current" viewBox="0 0 36 36">
             <path d="M18 0C19.2 9.5 26.5 16.8 36 18C26.5 19.2 19.2 26.5 18 36C16.8 26.5 9.5 19.2 0 18C9.5 16.8 16.8 9.5 18 0Z" />
           </svg>
@@ -88,7 +88,7 @@
 
       <!-- Right CTA Button -->
       <div class="hidden sm:flex items-center gap-3">
-        <a href="#contact" class="btn-orange-pill uppercase tracking-wider text-xs">
+        <a href="#contact" class="btn-blue-pill uppercase tracking-wider text-xs font-extrabold">
           <span>TEMPLATE</span>
           <i data-lucide="chevron-right" class="w-4 h-4 stroke-[3]"></i>
         </a>
@@ -103,10 +103,10 @@
   </header>
 
   <!-- Mobile Slide-over Drawer -->
-  <div id="mobile-drawer" class="fixed inset-0 z-50 bg-[#070709]/98 backdrop-blur-2xl transition-transform duration-300 transform translate-x-full lg:hidden flex flex-col p-6 overflow-y-auto">
+  <div id="mobile-drawer" class="fixed inset-0 z-50 bg-[#05070b]/98 backdrop-blur-2xl transition-transform duration-300 transform translate-x-full lg:hidden flex flex-col p-6 overflow-y-auto">
     <div class="flex items-center justify-between pb-6 border-b border-white/10">
       <div class="flex items-center gap-2">
-        <svg class="w-7 h-7 fill-[#ff7a00]" viewBox="0 0 36 36">
+        <svg class="w-7 h-7 fill-[#0ea5e9]" viewBox="0 0 36 36">
           <path d="M18 0C19.2 9.5 26.5 16.8 36 18C26.5 19.2 19.2 26.5 18 36C16.8 26.5 9.5 19.2 0 18C9.5 16.8 16.8 9.5 18 0Z" />
         </svg>
         <span class="text-lg font-bold text-white font-heading">AGENCEE</span>
@@ -117,20 +117,20 @@
     </div>
 
     <nav class="flex flex-col gap-5 py-8 text-lg font-bold text-slate-200 font-heading">
-      <a href="#" class="mobile-nav-link hover:text-[#ff7a00] transition-colors">HOME</a>
-      <a href="#about" class="mobile-nav-link hover:text-[#ff7a00] transition-colors">ABOUT</a>
-      <a href="#services" class="mobile-nav-link hover:text-[#ff7a00] transition-colors">SERVICES</a>
-      <a href="#projects" class="mobile-nav-link hover:text-[#ff7a00] transition-colors">PROJECTS</a>
-      <a href="#reviews" class="mobile-nav-link hover:text-[#ff7a00] transition-colors">REVIEWS</a>
-      <a href="#blog" class="mobile-nav-link hover:text-[#ff7a00] transition-colors">BLOG</a>
-      <a href="#contact" class="mobile-nav-link hover:text-[#ff7a00] transition-colors">CONTACT</a>
+      <a href="#" class="mobile-nav-link hover:text-[#0ea5e9] transition-colors">HOME</a>
+      <a href="#about" class="mobile-nav-link hover:text-[#0ea5e9] transition-colors">ABOUT</a>
+      <a href="#services" class="mobile-nav-link hover:text-[#0ea5e9] transition-colors">SERVICES</a>
+      <a href="#projects" class="mobile-nav-link hover:text-[#0ea5e9] transition-colors">PROJECTS</a>
+      <a href="#reviews" class="mobile-nav-link hover:text-[#0ea5e9] transition-colors">REVIEWS</a>
+      <a href="#blog" class="mobile-nav-link hover:text-[#0ea5e9] transition-colors">BLOG</a>
+      <a href="#contact" class="mobile-nav-link hover:text-[#0ea5e9] transition-colors">CONTACT</a>
     </nav>
 
     <div class="mt-auto space-y-4 pt-6 border-t border-white/10">
-      <a href="#contact" class="mobile-nav-link btn-orange-pill w-full py-3.5 text-center text-sm font-bold justify-center">
+      <a href="#contact" class="mobile-nav-link btn-blue-pill w-full py-3.5 text-center text-sm font-bold justify-center">
         GET STARTED NOW
       </a>
-      <button class="direct-whatsapp-btn w-full py-3 rounded-full bg-white/5 text-[#ff7a00] border border-[#ff7a00]/30 flex items-center justify-center gap-2 text-sm font-semibold">
+      <button class="direct-whatsapp-btn w-full py-3 rounded-full bg-white/5 text-[#38bdf8] border border-[#0ea5e9]/30 flex items-center justify-center gap-2 text-sm font-semibold">
         <i data-lucide="message-circle" class="w-4 h-4"></i> Chat on WhatsApp
       </button>
     </div>
@@ -139,18 +139,18 @@
 
   <main>
     <!-- ==========================================================================
-         1. HERO SECTION (EXACT MATCH TO REFERENCE IMAGE 1 & 2)
+         1. HERO SECTION (BLACK & BLUE GRADIENT THEME)
          ========================================================================== -->
     <section class="pt-32 sm:pt-40 pb-16 relative overflow-hidden text-center">
       
-      <!-- Top Radial Amber Glow -->
-      <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[#ff7a00]/15 rounded-full blur-[140px] pointer-events-none"></div>
+      <!-- Top Radial Electric Blue Glow -->
+      <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[850px] h-[450px] bg-[#0ea5e9]/15 rounded-full blur-[150px] pointer-events-none"></div>
 
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-8">
         
         <!-- #1 Agency Badge -->
-        <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-[#14151a] border border-white/10 shadow-lg reveal">
-          <span class="px-1.5 py-0.5 rounded bg-[#ff7a00] text-black font-black text-[10px]">#1</span>
+        <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-[#0e1422] border border-[#0ea5e9]/30 shadow-lg shadow-cyan-950/40 reveal">
+          <span class="px-1.5 py-0.5 rounded bg-gradient-to-r from-[#06b6d4] to-[#2563eb] text-white font-black text-[10px]">#1</span>
           <span class="text-xs uppercase tracking-widest font-extrabold text-slate-200">
             DIGITAL MARKETING AGENCY IN THE USA
           </span>
@@ -158,8 +158,8 @@
 
         <!-- Main Giant Headline with Highlight Box and Megaphone Icon -->
         <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight text-white font-heading leading-[1.08] reveal reveal-delay-1">
-          The Best <span class="border-2 border-[#ff7a00] text-white px-3 sm:px-4 py-0.5 rounded-xl inline-block -rotate-1 bg-[#ff7a00]/10 shadow-[0_0_30px_rgba(255,122,0,0.25)]">Digital</span> <br>
-          Marketing <span class="inline-flex items-center justify-center w-11 h-11 sm:w-16 sm:h-16 rounded-full bg-[#ff7a00] text-black mx-1.5 align-middle text-xl sm:text-3xl shadow-lg shadow-orange-500/40 animate-pulse">📢</span> Agency.
+          The Best <span class="border-2 border-[#06b6d4] text-white px-3 sm:px-4 py-0.5 rounded-xl inline-block -rotate-1 bg-[#06b6d4]/15 shadow-[0_0_35px_rgba(6,182,212,0.35)]">Digital</span> <br>
+          Marketing <span class="inline-flex items-center justify-center w-11 h-11 sm:w-16 sm:h-16 rounded-full bg-gradient-to-tr from-[#06b6d4] to-[#2563eb] text-white mx-1.5 align-middle text-xl sm:text-3xl shadow-lg shadow-cyan-500/40 animate-pulse">📢</span> Agency.
         </h1>
 
         <!-- Supporting Subtitle -->
@@ -169,7 +169,7 @@
 
         <!-- CTA Button -->
         <div class="pt-2 reveal reveal-delay-3">
-          <a href="#contact" class="btn-orange-pill px-8 py-4 text-sm sm:text-base font-extrabold shadow-2xl shadow-orange-500/40">
+          <a href="#contact" class="btn-blue-pill px-8 py-4 text-sm sm:text-base font-extrabold shadow-2xl shadow-cyan-500/40">
             <span>GET TEMPLATE</span>
             <i data-lucide="chevron-right" class="w-5 h-5 stroke-[3]"></i>
           </a>
@@ -179,20 +179,20 @@
         <div class="pt-4 flex items-center justify-center gap-4 reveal reveal-delay-3">
           <!-- Overlapping Avatars -->
           <div class="flex -space-x-2.5 overflow-hidden">
-            <img class="inline-block h-9 w-9 rounded-full ring-2 ring-[#070709] object-cover" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Client Avatar">
-            <img class="inline-block h-9 w-9 rounded-full ring-2 ring-[#070709] object-cover" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Client Avatar">
-            <img class="inline-block h-9 w-9 rounded-full ring-2 ring-[#070709] object-cover" src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=100&q=80" alt="Client Avatar">
-            <img class="inline-block h-9 w-9 rounded-full ring-2 ring-[#070709] object-cover" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80" alt="Client Avatar">
+            <img class="inline-block h-9 w-9 rounded-full ring-2 ring-[#05070b] object-cover" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Client Avatar">
+            <img class="inline-block h-9 w-9 rounded-full ring-2 ring-[#05070b] object-cover" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Client Avatar">
+            <img class="inline-block h-9 w-9 rounded-full ring-2 ring-[#05070b] object-cover" src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=100&q=80" alt="Client Avatar">
+            <img class="inline-block h-9 w-9 rounded-full ring-2 ring-[#05070b] object-cover" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80" alt="Client Avatar">
           </div>
 
           <!-- 5 Stars and Review Count -->
           <div class="text-left">
-            <div class="flex text-[#ff7a00] text-xs gap-1">
-              <i data-lucide="star" class="w-3.5 h-3.5 fill-[#ff7a00]"></i>
-              <i data-lucide="star" class="w-3.5 h-3.5 fill-[#ff7a00]"></i>
-              <i data-lucide="star" class="w-3.5 h-3.5 fill-[#ff7a00]"></i>
-              <i data-lucide="star" class="w-3.5 h-3.5 fill-[#ff7a00]"></i>
-              <i data-lucide="star" class="w-3.5 h-3.5 fill-[#ff7a00]"></i>
+            <div class="flex text-[#38bdf8] text-xs gap-1">
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-[#38bdf8]"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-[#38bdf8]"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-[#38bdf8]"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-[#38bdf8]"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-[#38bdf8]"></i>
             </div>
             <div class="text-[11px] font-black uppercase tracking-wider text-slate-300 mt-0.5 font-heading">
               2000+ 5 STAR REVIEWS
@@ -203,27 +203,27 @@
       </div>
 
       <!-- ==========================================================================
-           HERO VISUAL SHOWCASE (IMAGE 2: MARQUEE TEXT + TEAM + CIRCULAR VIDEO BADGE)
+           HERO VISUAL SHOWCASE (MARQUEE TEXT + TEAM + CIRCULAR VIDEO BADGE)
            ========================================================================== -->
       <div class="mt-16 sm:mt-24 relative max-w-7xl mx-auto px-4 sm:px-6">
         
         <!-- Giant Running Marquee Text Behind People -->
-        <div class="absolute -top-16 sm:-top-24 left-0 right-0 overflow-hidden pointer-events-none opacity-25 select-none z-0">
+        <div class="absolute -top-16 sm:-top-24 left-0 right-0 overflow-hidden pointer-events-none opacity-20 select-none z-0">
           <div class="marquee-hero-text text-[60px] sm:text-[110px] md:text-[150px] font-black text-white whitespace-nowrap font-heading uppercase tracking-tighter">
             Marketing Agency • Best Marketing Agency • Creative Design • Marketing Agency • Best Marketing Agency •
           </div>
         </div>
 
-        <!-- Radiant Golden Glow Behind Team -->
-        <div class="absolute inset-0 bg-gradient-to-t from-transparent via-[#ff7a00]/20 to-transparent blur-[90px] rounded-full pointer-events-none"></div>
+        <!-- Radiant Electric Blue Glow Behind Team -->
+        <div class="absolute inset-0 bg-gradient-to-t from-transparent via-[#0ea5e9]/20 to-transparent blur-[100px] rounded-full pointer-events-none"></div>
 
         <!-- Center Team Photography Showcase -->
-        <div class="relative z-10 max-w-4xl mx-auto rounded-3xl overflow-hidden border border-white/10 shadow-2xl bg-gradient-to-b from-[#18191e] to-[#0d0e11]">
+        <div class="relative z-10 max-w-4xl mx-auto rounded-3xl overflow-hidden border border-[#0ea5e9]/20 shadow-2xl bg-gradient-to-b from-[#111827] to-[#0a0f18]">
           <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80" 
                alt="AGENCEE Creative Marketing Team" 
                class="w-full h-[320px] sm:h-[480px] md:h-[540px] object-cover object-top opacity-90 hover:scale-105 transition-transform duration-700">
 
-          <!-- Rotating Circular "PLAY VIDEO" Badge (Exact match to screenshot!) -->
+          <!-- Rotating Circular "PLAY VIDEO" Badge -->
           <div class="absolute bottom-6 left-1/2 -translate-x-1/2 z-30 video-play-badge play-video-trigger" title="Play Agency Video Showreel">
             <div class="relative w-28 h-28 sm:w-32 sm:h-32 flex items-center justify-center">
               
@@ -232,7 +232,7 @@
                 <defs>
                   <path id="circlePath" d="M 60, 60 m -46, 0 a 46,46 0 1,1 92,0 a 46,46 0 1,1 -92,0" />
                 </defs>
-                <text font-size="9" font-weight="900" letter-spacing="2.2" fill="#ffffff">
+                <text font-size="9" font-weight="900" letter-spacing="2.2" fill="#38bdf8">
                   <textPath href="#circlePath" class="uppercase font-heading">
                     • PLAY VIDEO • KNOW ABOUT US •
                   </textPath>
@@ -240,7 +240,7 @@
               </svg>
 
               <!-- Central Play Button Circle -->
-              <div class="play-inner-circle w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-[#111215] border-2 border-[#ff7a00] text-[#ff7a00] flex items-center justify-center shadow-xl transition-all">
+              <div class="play-inner-circle w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-[#0a0f1a] border-2 border-[#0ea5e9] text-[#38bdf8] flex items-center justify-center shadow-xl transition-all">
                 <i data-lucide="play" class="w-6 h-6 fill-current translate-x-0.5"></i>
               </div>
 
@@ -254,7 +254,7 @@
 
 
     <!-- ==========================================================================
-         2. SERVICES SECTION (EXACT MATCH TO REFERENCE IMAGE 3)
+         2. SERVICES SECTION (BLACK & BLUE GRADIENT THEME)
          ========================================================================== -->
     <section id="services" class="py-24 relative overflow-hidden">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -262,7 +262,7 @@
         <!-- Header with "SERVICES" Badge, Title, and Right "VIEW ALL SERVICES >" Button -->
         <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6 reveal">
           <div>
-            <div class="capsule-badge text-[#ff7a00] mb-3">
+            <div class="capsule-badge text-[#38bdf8] mb-3">
               SERVICES
             </div>
             <h2 class="text-3xl sm:text-5xl lg:text-6xl font-black text-white font-heading tracking-tight">
@@ -271,7 +271,7 @@
           </div>
 
           <div>
-            <a href="#contact" class="btn-orange-pill uppercase tracking-wider text-xs font-extrabold">
+            <a href="#contact" class="btn-blue-pill uppercase tracking-wider text-xs font-extrabold">
               <span>VIEW ALL SERVICES</span>
               <i data-lucide="chevron-right" class="w-4 h-4 stroke-[3]"></i>
             </a>
@@ -284,12 +284,12 @@
           <!-- Card 1: SEO -->
           <div class="agencee-card group reveal">
             <!-- Icon -->
-            <div class="w-14 h-14 rounded-2xl bg-[#1d1e24] border border-white/10 flex items-center justify-center text-[#ff7a00] mb-8 group-hover:bg-[#ff7a00] group-hover:text-black transition-all">
+            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#0c1626] to-[#12223c] border border-[#0ea5e9]/30 flex items-center justify-center text-[#38bdf8] mb-8 group-hover:bg-gradient-to-tr group-hover:from-[#06b6d4] group-hover:to-[#2563eb] group-hover:text-white transition-all shadow-md">
               <span class="font-black text-2xl font-heading">G</span>
             </div>
 
             <!-- Title -->
-            <h3 class="text-2xl sm:text-3xl font-extrabold text-white font-heading mb-4 group-hover:text-[#ff7a00] transition-colors">
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-white font-heading mb-4 group-hover:text-[#38bdf8] transition-colors">
               SEO
             </h3>
 
@@ -299,7 +299,7 @@
             </p>
 
             <!-- Bottom Link -->
-            <a href="#contact" class="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-widest text-white hover:text-[#ff7a00] transition-colors">
+            <a href="#contact" class="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-widest text-white hover:text-[#38bdf8] transition-colors">
               <span>LEARN MORE</span>
               <i data-lucide="arrow-up-right" class="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
             </a>
@@ -308,12 +308,12 @@
           <!-- Card 2: Content Marketing -->
           <div class="agencee-card group reveal reveal-delay-1">
             <!-- Icon -->
-            <div class="w-14 h-14 rounded-2xl bg-[#1d1e24] border border-white/10 flex items-center justify-center text-[#ff7a00] mb-8 group-hover:bg-[#ff7a00] group-hover:text-black transition-all">
+            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#0c1626] to-[#12223c] border border-[#0ea5e9]/30 flex items-center justify-center text-[#38bdf8] mb-8 group-hover:bg-gradient-to-tr group-hover:from-[#06b6d4] group-hover:to-[#2563eb] group-hover:text-white transition-all shadow-md">
               <i data-lucide="file-text" class="w-7 h-7"></i>
             </div>
 
             <!-- Title -->
-            <h3 class="text-2xl sm:text-3xl font-extrabold text-white font-heading mb-4 group-hover:text-[#ff7a00] transition-colors">
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-white font-heading mb-4 group-hover:text-[#38bdf8] transition-colors">
               Content Marketing
             </h3>
 
@@ -323,7 +323,7 @@
             </p>
 
             <!-- Bottom Link -->
-            <a href="#contact" class="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-widest text-white hover:text-[#ff7a00] transition-colors">
+            <a href="#contact" class="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-widest text-white hover:text-[#38bdf8] transition-colors">
               <span>LEARN MORE</span>
               <i data-lucide="arrow-up-right" class="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
             </a>
@@ -332,12 +332,12 @@
           <!-- Card 3: Social Media Marketing -->
           <div class="agencee-card group reveal">
             <!-- Icon -->
-            <div class="w-14 h-14 rounded-2xl bg-[#1d1e24] border border-white/10 flex items-center justify-center text-[#ff7a00] mb-8 group-hover:bg-[#ff7a00] group-hover:text-black transition-all">
+            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#0c1626] to-[#12223c] border border-[#0ea5e9]/30 flex items-center justify-center text-[#38bdf8] mb-8 group-hover:bg-gradient-to-tr group-hover:from-[#06b6d4] group-hover:to-[#2563eb] group-hover:text-white transition-all shadow-md">
               <i data-lucide="instagram" class="w-7 h-7"></i>
             </div>
 
             <!-- Title -->
-            <h3 class="text-2xl sm:text-3xl font-extrabold text-white font-heading mb-4 group-hover:text-[#ff7a00] transition-colors">
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-white font-heading mb-4 group-hover:text-[#38bdf8] transition-colors">
               Social Media Marketing
             </h3>
 
@@ -347,7 +347,7 @@
             </p>
 
             <!-- Bottom Link -->
-            <a href="#contact" class="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-widest text-white hover:text-[#ff7a00] transition-colors">
+            <a href="#contact" class="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-widest text-white hover:text-[#38bdf8] transition-colors">
               <span>LEARN MORE</span>
               <i data-lucide="arrow-up-right" class="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
             </a>
@@ -356,12 +356,12 @@
           <!-- Card 4: Graphic & Brand Design -->
           <div class="agencee-card group reveal reveal-delay-1">
             <!-- Icon -->
-            <div class="w-14 h-14 rounded-2xl bg-[#1d1e24] border border-white/10 flex items-center justify-center text-[#ff7a00] mb-8 group-hover:bg-[#ff7a00] group-hover:text-black transition-all">
+            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#0c1626] to-[#12223c] border border-[#0ea5e9]/30 flex items-center justify-center text-[#38bdf8] mb-8 group-hover:bg-gradient-to-tr group-hover:from-[#06b6d4] group-hover:to-[#2563eb] group-hover:text-white transition-all shadow-md">
               <i data-lucide="palette" class="w-7 h-7"></i>
             </div>
 
             <!-- Title -->
-            <h3 class="text-2xl sm:text-3xl font-extrabold text-white font-heading mb-4 group-hover:text-[#ff7a00] transition-colors">
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-white font-heading mb-4 group-hover:text-[#38bdf8] transition-colors">
               Graphic & Brand Design
             </h3>
 
@@ -371,7 +371,7 @@
             </p>
 
             <!-- Bottom Link -->
-            <a href="#contact" class="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-widest text-white hover:text-[#ff7a00] transition-colors">
+            <a href="#contact" class="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-widest text-white hover:text-[#38bdf8] transition-colors">
               <span>LEARN MORE</span>
               <i data-lucide="arrow-up-right" class="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
             </a>
@@ -384,13 +384,13 @@
 
 
     <!-- ==========================================================================
-         3. BRANDS THAT TRUST US & 4 STAT CIRCLES (EXACT MATCH TO REFERENCE IMAGE 4 & 5)
+         3. BRANDS THAT TRUST US & 4 STAT CIRCLES
          ========================================================================== -->
     <section id="about" class="py-24 relative overflow-hidden border-t border-white/5">
       
       <!-- Brands Header -->
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-12 reveal">
-        <div class="capsule-badge text-[#ff7a00] mb-3">
+        <div class="capsule-badge text-[#38bdf8] mb-3">
           BRANDS COLLABORATION
         </div>
         <h2 class="text-3xl sm:text-5xl font-black text-white font-heading">
@@ -404,87 +404,81 @@
           
           <div class="logo-pill-card">
             <span class="text-slate-300 font-bold font-mono tracking-widest text-sm flex items-center gap-2">
-              <i data-lucide="box" class="w-5 h-5 text-[#ff7a00]"></i> LOGOIPSUM
+              <i data-lucide="box" class="w-5 h-5 text-[#38bdf8]"></i> LOGOIPSUM
             </span>
           </div>
 
           <div class="logo-pill-card">
             <span class="text-slate-300 font-bold font-mono tracking-widest text-sm flex items-center gap-2">
-              <i data-lucide="feather" class="w-5 h-5 text-[#ff7a00]"></i> LOGOIPSUM
+              <i data-lucide="feather" class="w-5 h-5 text-[#38bdf8]"></i> LOGOIPSUM
             </span>
           </div>
 
           <div class="logo-pill-card">
             <span class="text-slate-300 font-bold font-mono tracking-widest text-sm flex items-center gap-2">
-              <i data-lucide="globe" class="w-5 h-5 text-[#ff7a00]"></i> LOGO-IPSUM
+              <i data-lucide="globe" class="w-5 h-5 text-[#38bdf8]"></i> LOGO-IPSUM
             </span>
           </div>
 
           <div class="logo-pill-card">
             <span class="text-slate-300 font-bold font-mono tracking-widest text-sm flex items-center gap-2">
-              <i data-lucide="shield" class="w-5 h-5 text-[#ff7a00]"></i> LOGOIPSUM
+              <i data-lucide="shield" class="w-5 h-5 text-[#38bdf8]"></i> LOGOIPSUM
             </span>
           </div>
 
           <div class="logo-pill-card">
             <span class="text-slate-300 font-bold font-mono tracking-widest text-sm flex items-center gap-2">
-              <i data-lucide="asterisk" class="w-5 h-5 text-[#ff7a00]"></i> LOGOIPSUM
+              <i data-lucide="asterisk" class="w-5 h-5 text-[#38bdf8]"></i> LOGOIPSUM
             </span>
           </div>
 
           <div class="logo-pill-card">
             <span class="text-slate-300 font-bold font-mono tracking-widest text-sm flex items-center gap-2">
-              <i data-lucide="cpu" class="w-5 h-5 text-[#ff7a00]"></i> LOGOIPSUM
+              <i data-lucide="cpu" class="w-5 h-5 text-[#38bdf8]"></i> LOGOIPSUM
             </span>
           </div>
 
           <!-- Repeat for smooth loop -->
           <div class="logo-pill-card">
             <span class="text-slate-300 font-bold font-mono tracking-widest text-sm flex items-center gap-2">
-              <i data-lucide="box" class="w-5 h-5 text-[#ff7a00]"></i> LOGOIPSUM
+              <i data-lucide="box" class="w-5 h-5 text-[#38bdf8]"></i> LOGOIPSUM
             </span>
           </div>
 
           <div class="logo-pill-card">
             <span class="text-slate-300 font-bold font-mono tracking-widest text-sm flex items-center gap-2">
-              <i data-lucide="feather" class="w-5 h-5 text-[#ff7a00]"></i> LOGOIPSUM
-            </span>
-          </div>
-
-          <div class="logo-pill-card">
-            <span class="text-slate-300 font-bold font-mono tracking-widest text-sm flex items-center gap-2">
-              <i data-lucide="globe" class="w-5 h-5 text-[#ff7a00]"></i> LOGO-IPSUM
+              <i data-lucide="feather" class="w-5 h-5 text-[#38bdf8]"></i> LOGOIPSUM
             </span>
           </div>
 
         </div>
       </div>
 
-      <!-- 4 Connected Circular Stats (Exact match to screenshot 4!) -->
+      <!-- 4 Connected Circular Stats -->
       <div class="max-w-5xl mx-auto px-4 sm:px-6 relative z-10">
         <div class="flex flex-wrap items-center justify-center -space-x-4 sm:-space-x-6 gap-y-4">
           
           <!-- Circle 1: 15+ Years of Experience -->
           <div class="stat-circle-card reveal">
-            <div class="text-3xl sm:text-4xl font-black text-white font-heading" data-counter="15" data-suffix="+">15+</div>
+            <div class="text-3xl sm:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#38bdf8] to-[#0ea5e9] font-heading" data-counter="15" data-suffix="+">15+</div>
             <div class="text-xs text-slate-400 mt-1 font-semibold">Years of Experience</div>
           </div>
 
           <!-- Circle 2: 200+ Successful Projects -->
           <div class="stat-circle-card reveal reveal-delay-1">
-            <div class="text-3xl sm:text-4xl font-black text-white font-heading" data-counter="200" data-suffix="+">200+</div>
+            <div class="text-3xl sm:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#38bdf8] to-[#0ea5e9] font-heading" data-counter="200" data-suffix="+">200+</div>
             <div class="text-xs text-slate-400 mt-1 font-semibold">Successful Projects</div>
           </div>
 
           <!-- Circle 3: 150+ Happy Clients -->
           <div class="stat-circle-card reveal reveal-delay-2">
-            <div class="text-3xl sm:text-4xl font-black text-white font-heading" data-counter="150" data-suffix="+">150+</div>
+            <div class="text-3xl sm:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#38bdf8] to-[#0ea5e9] font-heading" data-counter="150" data-suffix="+">150+</div>
             <div class="text-xs text-slate-400 mt-1 font-semibold">Happy Clients</div>
           </div>
 
           <!-- Circle 4: 160 5 Star Reviews -->
           <div class="stat-circle-card reveal reveal-delay-3">
-            <div class="text-3xl sm:text-4xl font-black text-white font-heading" data-counter="160" data-suffix="">160</div>
+            <div class="text-3xl sm:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#38bdf8] to-[#0ea5e9] font-heading" data-counter="160" data-suffix="">160</div>
             <div class="text-xs text-slate-400 mt-1 font-semibold">5 Star Reviews</div>
           </div>
 
@@ -495,9 +489,9 @@
 
 
     <!-- ==========================================================================
-         4. WHY CHOOSE US / FEATURES SECTION (EXACT MATCH TO REFERENCE IMAGE 5)
+         4. WHY CHOOSE US / FEATURES SECTION
          ========================================================================== -->
-    <section class="py-20 relative overflow-hidden bg-gradient-to-b from-[#070709] via-[#0c0d10] to-[#070709]">
+    <section class="py-20 relative overflow-hidden bg-gradient-to-b from-[#05070b] via-[#080d16] to-[#05070b]">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <!-- 3 Feature Cards Grid -->
@@ -505,7 +499,7 @@
           
           <!-- Feature 1: Proven Track Record -->
           <div class="agencee-card text-center flex flex-col items-center reveal">
-            <div class="w-14 h-14 rounded-2xl bg-[#1d1e24] border border-[#ff7a00]/30 text-[#ff7a00] flex items-center justify-center mb-6 shadow-lg shadow-orange-500/10">
+            <div class="w-14 h-14 rounded-2xl bg-[#0e1626] border border-[#0ea5e9]/30 text-[#38bdf8] flex items-center justify-center mb-6 shadow-lg shadow-cyan-500/10">
               <i data-lucide="rocket" class="w-7 h-7"></i>
             </div>
             <h3 class="text-xl sm:text-2xl font-extrabold text-white font-heading mb-3">
@@ -518,7 +512,7 @@
 
           <!-- Feature 2: Tailored Solutions -->
           <div class="agencee-card text-center flex flex-col items-center reveal reveal-delay-1">
-            <div class="w-14 h-14 rounded-2xl bg-[#1d1e24] border border-[#ff7a00]/30 text-[#ff7a00] flex items-center justify-center mb-6 shadow-lg shadow-orange-500/10">
+            <div class="w-14 h-14 rounded-2xl bg-[#0e1626] border border-[#0ea5e9]/30 text-[#38bdf8] flex items-center justify-center mb-6 shadow-lg shadow-cyan-500/10">
               <i data-lucide="share-2" class="w-7 h-7"></i>
             </div>
             <h3 class="text-xl sm:text-2xl font-extrabold text-white font-heading mb-3">
@@ -531,7 +525,7 @@
 
           <!-- Feature 3: Client-Centric Focus -->
           <div class="agencee-card text-center flex flex-col items-center reveal reveal-delay-2">
-            <div class="w-14 h-14 rounded-2xl bg-[#1d1e24] border border-[#ff7a00]/30 text-[#ff7a00] flex items-center justify-center mb-6 shadow-lg shadow-orange-500/10">
+            <div class="w-14 h-14 rounded-2xl bg-[#0e1626] border border-[#0ea5e9]/30 text-[#38bdf8] flex items-center justify-center mb-6 shadow-lg shadow-cyan-500/10">
               <i data-lucide="scan-face" class="w-7 h-7"></i>
             </div>
             <h3 class="text-xl sm:text-2xl font-extrabold text-white font-heading mb-3">
@@ -544,19 +538,19 @@
 
         </div>
 
-        <!-- Bottom Row of 4 Dark Pill Tags with Orange Icons (Exact match to Screenshot 5!) -->
+        <!-- Bottom Row of 4 Dark Pill Tags with Blue Icons -->
         <div class="flex flex-wrap items-center justify-center gap-3 reveal">
-          <div class="px-5 py-2.5 rounded-full bg-[#131418] border border-white/10 text-xs font-bold text-slate-300 flex items-center gap-2">
-            <i data-lucide="sparkles" class="w-4 h-4 text-[#ff7a00]"></i> Continuous Innovation
+          <div class="px-5 py-2.5 rounded-full bg-[#0c121e] border border-white/10 text-xs font-bold text-slate-300 flex items-center gap-2">
+            <i data-lucide="sparkles" class="w-4 h-4 text-[#38bdf8]"></i> Continuous Innovation
           </div>
-          <div class="px-5 py-2.5 rounded-full bg-[#131418] border border-white/10 text-xs font-bold text-slate-300 flex items-center gap-2">
-            <i data-lucide="headphones" class="w-4 h-4 text-[#ff7a00]"></i> Dedicated Support
+          <div class="px-5 py-2.5 rounded-full bg-[#0c121e] border border-white/10 text-xs font-bold text-slate-300 flex items-center gap-2">
+            <i data-lucide="headphones" class="w-4 h-4 text-[#38bdf8]"></i> Dedicated Support
           </div>
-          <div class="px-5 py-2.5 rounded-full bg-[#131418] border border-white/10 text-xs font-bold text-slate-300 flex items-center gap-2">
-            <i data-lucide="smile" class="w-4 h-4 text-[#ff7a00]"></i> Positive Client Experiences
+          <div class="px-5 py-2.5 rounded-full bg-[#0c121e] border border-white/10 text-xs font-bold text-slate-300 flex items-center gap-2">
+            <i data-lucide="smile" class="w-4 h-4 text-[#38bdf8]"></i> Positive Client Experiences
           </div>
-          <div class="px-5 py-2.5 rounded-full bg-[#131418] border border-white/10 text-xs font-bold text-slate-300 flex items-center gap-2">
-            <i data-lucide="award" class="w-4 h-4 text-[#ff7a00]"></i> Commitment to Excellence
+          <div class="px-5 py-2.5 rounded-full bg-[#0c121e] border border-white/10 text-xs font-bold text-slate-300 flex items-center gap-2">
+            <i data-lucide="award" class="w-4 h-4 text-[#38bdf8]"></i> Commitment to Excellence
           </div>
         </div>
 
@@ -572,7 +566,7 @@
         
         <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6 reveal">
           <div>
-            <div class="capsule-badge text-[#ff7a00] mb-3">
+            <div class="capsule-badge text-[#38bdf8] mb-3">
               SELECTED WORKS
             </div>
             <h2 class="text-3xl sm:text-5xl lg:text-6xl font-black text-white font-heading tracking-tight">
@@ -580,7 +574,7 @@
             </h2>
           </div>
           <div>
-            <a href="#contact" class="btn-orange-pill uppercase tracking-wider text-xs font-extrabold">
+            <a href="#contact" class="btn-blue-pill uppercase tracking-wider text-xs font-extrabold">
               <span>EXPLORE ALL WORK</span>
               <i data-lucide="chevron-right" class="w-4 h-4 stroke-[3]"></i>
             </a>
@@ -594,19 +588,19 @@
           <div class="agencee-card p-0 group overflow-hidden reveal">
             <div class="h-64 overflow-hidden relative">
               <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Fintech Scaling" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-              <span class="absolute top-4 left-4 px-3 py-1 text-[11px] font-black rounded-full bg-black/70 text-[#ff7a00] border border-[#ff7a00]/30 backdrop-blur-md">
+              <span class="absolute top-4 left-4 px-3 py-1 text-[11px] font-black rounded-full bg-black/70 text-[#38bdf8] border border-[#0ea5e9]/30 backdrop-blur-md">
                 DIGITAL MARKETING
               </span>
             </div>
             <div class="p-6">
               <div class="text-xs text-slate-400 mb-1">NovaFin Tech</div>
-              <h3 class="text-xl font-bold text-white font-heading group-hover:text-[#ff7a00] transition-colors">
+              <h3 class="text-xl font-bold text-white font-heading group-hover:text-[#38bdf8] transition-colors">
                 +340% Sales & Omnichannel Launch
               </h3>
               <p class="text-slate-400 text-xs mt-2 line-clamp-2">
                 Full-funnel Google and Meta ads architecture scaling monthly pipeline 3.4X.
               </p>
-              <div class="mt-4 pt-4 border-t border-white/5 flex items-center justify-between text-xs text-[#ff7a00] font-bold">
+              <div class="mt-4 pt-4 border-t border-white/5 flex items-center justify-between text-xs text-[#38bdf8] font-bold">
                 <span>VIEW CASE STUDY</span>
                 <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
               </div>
@@ -617,19 +611,19 @@
           <div class="agencee-card p-0 group overflow-hidden reveal reveal-delay-1">
             <div class="h-64 overflow-hidden relative">
               <img src="https://images.unsplash.com/photo-1542744094-3a31f272c490?auto=format&fit=crop&w=800&q=80" alt="Brand Identity" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-              <span class="absolute top-4 left-4 px-3 py-1 text-[11px] font-black rounded-full bg-black/70 text-[#ff7a00] border border-[#ff7a00]/30 backdrop-blur-md">
+              <span class="absolute top-4 left-4 px-3 py-1 text-[11px] font-black rounded-full bg-black/70 text-[#38bdf8] border border-[#0ea5e9]/30 backdrop-blur-md">
                 BRANDING & DESIGN
               </span>
             </div>
             <div class="p-6">
               <div class="text-xs text-slate-400 mb-1">Aura Skincare</div>
-              <h3 class="text-xl font-bold text-white font-heading group-hover:text-[#ff7a00] transition-colors">
+              <h3 class="text-xl font-bold text-white font-heading group-hover:text-[#38bdf8] transition-colors">
                 Luxury Eco Packaging & Identity
               </h3>
               <p class="text-slate-400 text-xs mt-2 line-clamp-2">
                 Custom packaging system that achieved national retail shelf distribution.
               </p>
-              <div class="mt-4 pt-4 border-t border-white/5 flex items-center justify-between text-xs text-[#ff7a00] font-bold">
+              <div class="mt-4 pt-4 border-t border-white/5 flex items-center justify-between text-xs text-[#38bdf8] font-bold">
                 <span>VIEW CASE STUDY</span>
                 <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
               </div>
@@ -640,19 +634,19 @@
           <div class="agencee-card p-0 group overflow-hidden reveal reveal-delay-2">
             <div class="h-64 overflow-hidden relative">
               <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=800&q=80" alt="Social Media Growth" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-              <span class="absolute top-4 left-4 px-3 py-1 text-[11px] font-black rounded-full bg-black/70 text-[#ff7a00] border border-[#ff7a00]/30 backdrop-blur-md">
+              <span class="absolute top-4 left-4 px-3 py-1 text-[11px] font-black rounded-full bg-black/70 text-[#38bdf8] border border-[#0ea5e9]/30 backdrop-blur-md">
                 VIRAL SOCIAL
               </span>
             </div>
             <div class="p-6">
               <div class="text-xs text-slate-400 mb-1">HyperPulse Energy</div>
-              <h3 class="text-xl font-bold text-white font-heading group-hover:text-[#ff7a00] transition-colors">
+              <h3 class="text-xl font-bold text-white font-heading group-hover:text-[#38bdf8] transition-colors">
                 4.8M Viral Short-Form Video Campaign
               </h3>
               <p class="text-slate-400 text-xs mt-2 line-clamp-2">
                 TikTok and Instagram Reels strategy driving 140% surge in audience engagement.
               </p>
-              <div class="mt-4 pt-4 border-t border-white/5 flex items-center justify-between text-xs text-[#ff7a00] font-bold">
+              <div class="mt-4 pt-4 border-t border-white/5 flex items-center justify-between text-xs text-[#38bdf8] font-bold">
                 <span>VIEW CASE STUDY</span>
                 <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
               </div>
@@ -668,11 +662,11 @@
     <!-- ==========================================================================
          6. CLIENT REVIEWS / TESTIMONIALS SECTION
          ========================================================================== -->
-    <section id="reviews" class="py-24 relative overflow-hidden bg-[#0a0b0e] border-t border-white/5">
+    <section id="reviews" class="py-24 relative overflow-hidden bg-[#070b12] border-t border-white/5">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-3xl mx-auto mb-16 space-y-4 reveal">
-          <div class="capsule-badge text-[#ff7a00]">
+          <div class="capsule-badge text-[#38bdf8]">
             CLIENT TESTIMONIALS
           </div>
           <h2 class="text-3xl sm:text-5xl font-black text-white font-heading">
@@ -685,12 +679,12 @@
           <!-- Testimonial 1 -->
           <div class="agencee-card flex flex-col justify-between reveal">
             <div>
-              <div class="flex text-[#ff7a00] mb-4 gap-1">
-                <i data-lucide="star" class="w-4 h-4 fill-[#ff7a00]"></i>
-                <i data-lucide="star" class="w-4 h-4 fill-[#ff7a00]"></i>
-                <i data-lucide="star" class="w-4 h-4 fill-[#ff7a00]"></i>
-                <i data-lucide="star" class="w-4 h-4 fill-[#ff7a00]"></i>
-                <i data-lucide="star" class="w-4 h-4 fill-[#ff7a00]"></i>
+              <div class="flex text-[#38bdf8] mb-4 gap-1">
+                <i data-lucide="star" class="w-4 h-4 fill-[#38bdf8]"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-[#38bdf8]"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-[#38bdf8]"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-[#38bdf8]"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-[#38bdf8]"></i>
               </div>
               <p class="text-slate-200 text-sm sm:text-base italic leading-relaxed mb-6">
                 "AGENCEE took our paid ad ROAS from 1.6x to over 4.8x within 90 days. Their team merges top-tier graphic design with relentless data optimization."
@@ -708,12 +702,12 @@
           <!-- Testimonial 2 -->
           <div class="agencee-card flex flex-col justify-between reveal reveal-delay-1">
             <div>
-              <div class="flex text-[#ff7a00] mb-4 gap-1">
-                <i data-lucide="star" class="w-4 h-4 fill-[#ff7a00]"></i>
-                <i data-lucide="star" class="w-4 h-4 fill-[#ff7a00]"></i>
-                <i data-lucide="star" class="w-4 h-4 fill-[#ff7a00]"></i>
-                <i data-lucide="star" class="w-4 h-4 fill-[#ff7a00]"></i>
-                <i data-lucide="star" class="w-4 h-4 fill-[#ff7a00]"></i>
+              <div class="flex text-[#38bdf8] mb-4 gap-1">
+                <i data-lucide="star" class="w-4 h-4 fill-[#38bdf8]"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-[#38bdf8]"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-[#38bdf8]"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-[#38bdf8]"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-[#38bdf8]"></i>
               </div>
               <p class="text-slate-200 text-sm sm:text-base italic leading-relaxed mb-6">
                 "The brand identity and packaging design they built for our skincare line helped us secure national retail placement in quarter one."
@@ -731,12 +725,12 @@
           <!-- Testimonial 3 -->
           <div class="agencee-card flex flex-col justify-between reveal reveal-delay-2">
             <div>
-              <div class="flex text-[#ff7a00] mb-4 gap-1">
-                <i data-lucide="star" class="w-4 h-4 fill-[#ff7a00]"></i>
-                <i data-lucide="star" class="w-4 h-4 fill-[#ff7a00]"></i>
-                <i data-lucide="star" class="w-4 h-4 fill-[#ff7a00]"></i>
-                <i data-lucide="star" class="w-4 h-4 fill-[#ff7a00]"></i>
-                <i data-lucide="star" class="w-4 h-4 fill-[#ff7a00]"></i>
+              <div class="flex text-[#38bdf8] mb-4 gap-1">
+                <i data-lucide="star" class="w-4 h-4 fill-[#38bdf8]"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-[#38bdf8]"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-[#38bdf8]"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-[#38bdf8]"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-[#38bdf8]"></i>
               </div>
               <p class="text-slate-200 text-sm sm:text-base italic leading-relaxed mb-6">
                 "Fast, responsive, and truly world-class creative output. They feel like a core extension of our internal executive team."
@@ -765,7 +759,7 @@
         
         <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6 reveal">
           <div>
-            <div class="capsule-badge text-[#ff7a00] mb-3">
+            <div class="capsule-badge text-[#38bdf8] mb-3">
               GROWTH ARTICLES
             </div>
             <h2 class="text-3xl sm:text-5xl font-black text-white font-heading tracking-tight">
@@ -773,7 +767,7 @@
             </h2>
           </div>
           <div>
-            <a href="#contact" class="btn-orange-pill uppercase tracking-wider text-xs font-extrabold">
+            <a href="#contact" class="btn-blue-pill uppercase tracking-wider text-xs font-extrabold">
               <span>VIEW ALL POSTS</span>
               <i data-lucide="chevron-right" class="w-4 h-4 stroke-[3]"></i>
             </a>
@@ -785,8 +779,8 @@
           <div class="agencee-card p-0 group overflow-hidden reveal">
             <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Blog 1" class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-500">
             <div class="p-6">
-              <span class="text-[11px] font-bold text-[#ff7a00] uppercase">Paid Acquisition</span>
-              <h3 class="text-lg font-bold text-white font-heading mt-2 group-hover:text-[#ff7a00] transition-colors">
+              <span class="text-[11px] font-bold text-[#38bdf8] uppercase">Paid Acquisition</span>
+              <h3 class="text-lg font-bold text-white font-heading mt-2 group-hover:text-[#38bdf8] transition-colors">
                 How to Scale Meta Ads in 2026 Without Bleeding CAC
               </h3>
               <p class="text-slate-400 text-xs mt-2">
@@ -798,8 +792,8 @@
           <div class="agencee-card p-0 group overflow-hidden reveal reveal-delay-1">
             <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80" alt="Blog 2" class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-500">
             <div class="p-6">
-              <span class="text-[11px] font-bold text-[#ff7a00] uppercase">Brand Identity</span>
-              <h3 class="text-lg font-bold text-white font-heading mt-2 group-hover:text-[#ff7a00] transition-colors">
+              <span class="text-[11px] font-bold text-[#38bdf8] uppercase">Brand Identity</span>
+              <h3 class="text-lg font-bold text-white font-heading mt-2 group-hover:text-[#38bdf8] transition-colors">
                 The Psychology of High-Ticket Packaging Design
               </h3>
               <p class="text-slate-400 text-xs mt-2">
@@ -811,8 +805,8 @@
           <div class="agencee-card p-0 group overflow-hidden reveal reveal-delay-2">
             <img src="https://images.unsplash.com/photo-1533750516457-a7f992034fec?auto=format&fit=crop&w=800&q=80" alt="Blog 3" class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-500">
             <div class="p-6">
-              <span class="text-[11px] font-bold text-[#ff7a00] uppercase">Search Authority</span>
-              <h3 class="text-lg font-bold text-white font-heading mt-2 group-hover:text-[#ff7a00] transition-colors">
+              <span class="text-[11px] font-bold text-[#38bdf8] uppercase">Search Authority</span>
+              <h3 class="text-lg font-bold text-white font-heading mt-2 group-hover:text-[#38bdf8] transition-colors">
                 AI Overviews & Modern Search Strategy
               </h3>
               <p class="text-slate-400 text-xs mt-2">
@@ -830,48 +824,48 @@
     <!-- ==========================================================================
          8. FINAL CTA & CONTACT SECTION
          ========================================================================== -->
-    <section id="contact" class="py-24 relative overflow-hidden bg-gradient-to-b from-[#070709] via-[#0d0e12] to-[#040406]">
+    <section id="contact" class="py-24 relative overflow-hidden bg-gradient-to-b from-[#05070b] via-[#0b101c] to-[#04060a]">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="grid lg:grid-cols-12 gap-12 items-center">
           
           <div class="lg:col-span-5 space-y-6 reveal">
-            <div class="capsule-badge text-[#ff7a00]">
+            <div class="capsule-badge text-[#38bdf8]">
               GET IN TOUCH
             </div>
             <h2 class="text-4xl sm:text-6xl font-black text-white font-heading tracking-tight leading-tight">
               Ready to grow <br>
-              <span class="text-[#ff7a00]">your brand?</span>
+              <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#38bdf8] via-[#0ea5e9] to-[#2563eb]">your brand?</span>
             </h2>
             <p class="text-slate-400 text-base leading-relaxed">
               Let's build a brand and marketing strategy that gets attention and drives real revenue. Reach out directly or send an inquiry.
             </p>
 
             <div class="space-y-4 pt-2">
-              <a href="#" class="direct-whatsapp-btn agencee-card p-4 flex items-center justify-between group hover:border-[#ff7a00]/50 transition-colors">
+              <a href="#" class="direct-whatsapp-btn agencee-card p-4 flex items-center justify-between group hover:border-[#0ea5e9]/50 transition-colors">
                 <div class="flex items-center gap-3">
-                  <div class="w-10 h-10 rounded-xl bg-[#ff7a00]/20 text-[#ff7a00] flex items-center justify-center">
+                  <div class="w-10 h-10 rounded-xl bg-[#0ea5e9]/20 text-[#38bdf8] flex items-center justify-center">
                     <i data-lucide="message-circle" class="w-5 h-5"></i>
                   </div>
                   <div>
                     <div class="text-xs text-slate-400">Direct WhatsApp</div>
-                    <div class="text-sm font-bold text-white group-hover:text-[#ff7a00]">+1 (800) 555-0199</div>
+                    <div class="text-sm font-bold text-white group-hover:text-[#38bdf8]">+1 (800) 555-0199</div>
                   </div>
                 </div>
-                <i data-lucide="arrow-right" class="w-4 h-4 text-[#ff7a00]"></i>
+                <i data-lucide="arrow-right" class="w-4 h-4 text-[#38bdf8]"></i>
               </a>
 
-              <a href="mailto:hello@agencee.com" class="agencee-card p-4 flex items-center justify-between group hover:border-[#ff7a00]/50 transition-colors">
+              <a href="mailto:hello@agencee.com" class="agencee-card p-4 flex items-center justify-between group hover:border-[#0ea5e9]/50 transition-colors">
                 <div class="flex items-center gap-3">
                   <div class="w-10 h-10 rounded-xl bg-white/5 text-slate-300 flex items-center justify-center">
                     <i data-lucide="mail" class="w-5 h-5"></i>
                   </div>
                   <div>
                     <div class="text-xs text-slate-400">Official Email</div>
-                    <div class="text-sm font-bold text-white group-hover:text-[#ff7a00]">hello@agencee.com</div>
+                    <div class="text-sm font-bold text-white group-hover:text-[#38bdf8]">hello@agencee.com</div>
                   </div>
                 </div>
-                <i data-lucide="arrow-right" class="w-4 h-4 text-slate-400 group-hover:text-[#ff7a00]"></i>
+                <i data-lucide="arrow-right" class="w-4 h-4 text-slate-400 group-hover:text-[#38bdf8]"></i>
               </a>
             </div>
           </div>
@@ -886,12 +880,12 @@
                   <div>
                     <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Name *</label>
                     <input type="text" id="contact-name" placeholder="John Doe" required
-                           class="w-full px-4 py-3.5 rounded-xl bg-[#18191e] border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-[#ff7a00] text-sm">
+                           class="w-full px-4 py-3.5 rounded-xl bg-[#111724] border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-[#0ea5e9] text-sm">
                   </div>
                   <div>
                     <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Business Name</label>
                     <input type="text" id="contact-company" placeholder="Acme Studio"
-                           class="w-full px-4 py-3.5 rounded-xl bg-[#18191e] border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-[#ff7a00] text-sm">
+                           class="w-full px-4 py-3.5 rounded-xl bg-[#111724] border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-[#0ea5e9] text-sm">
                   </div>
                 </div>
 
@@ -899,22 +893,22 @@
                   <div>
                     <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Work Email *</label>
                     <input type="email" id="contact-email" placeholder="john@company.com" required
-                           class="w-full px-4 py-3.5 rounded-xl bg-[#18191e] border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-[#ff7a00] text-sm">
+                           class="w-full px-4 py-3.5 rounded-xl bg-[#111724] border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-[#0ea5e9] text-sm">
                   </div>
                   <div>
                     <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Phone</label>
                     <input type="tel" id="contact-phone" placeholder="+1 (555) 000-0000"
-                           class="w-full px-4 py-3.5 rounded-xl bg-[#18191e] border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-[#ff7a00] text-sm">
+                           class="w-full px-4 py-3.5 rounded-xl bg-[#111724] border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-[#0ea5e9] text-sm">
                   </div>
                 </div>
 
                 <div>
                   <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Project Scope & Goals</label>
                   <textarea id="contact-details" rows="3" placeholder="Tell us about your timeline, marketing goals, or design needs..."
-                            class="w-full px-4 py-3.5 rounded-xl bg-[#18191e] border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-[#ff7a00] text-sm"></textarea>
+                            class="w-full px-4 py-3.5 rounded-xl bg-[#111724] border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-[#0ea5e9] text-sm"></textarea>
                 </div>
 
-                <button type="submit" id="form-submit-btn" class="btn-orange-pill w-full py-4 text-center justify-center font-black text-sm uppercase tracking-wider">
+                <button type="submit" id="form-submit-btn" class="btn-blue-pill w-full py-4 text-center justify-center font-black text-sm uppercase tracking-wider">
                   <span>SEND INQUIRY</span>
                   <i data-lucide="chevron-right" class="w-4 h-4 stroke-[3]"></i>
                 </button>
@@ -934,11 +928,11 @@
   <!-- ==========================================================================
        FOOTER
        ========================================================================== -->
-  <footer class="bg-[#040406] border-t border-white/10 py-12 text-slate-400 text-sm">
+  <footer class="bg-[#030408] border-t border-white/10 py-12 text-slate-400 text-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
       
       <a href="#" class="flex items-center gap-2.5">
-        <svg class="w-6 h-6 fill-[#ff7a00]" viewBox="0 0 36 36">
+        <svg class="w-6 h-6 fill-[#0ea5e9]" viewBox="0 0 36 36">
           <path d="M18 0C19.2 9.5 26.5 16.8 36 18C26.5 19.2 19.2 26.5 18 36C16.8 26.5 9.5 19.2 0 18C9.5 16.8 16.8 9.5 18 0Z" />
         </svg>
         <span class="text-lg font-bold text-white font-heading uppercase">AGENCEE</span>
@@ -967,8 +961,8 @@
 
   <!-- Video Showreel Modal -->
   <div id="video-modal" class="fixed inset-0 z-50 modal-backdrop hidden items-center justify-center p-4 sm:p-6">
-    <div class="relative w-full max-w-4xl bg-[#121316] border border-white/15 rounded-3xl p-6 shadow-2xl">
-      <button id="close-video-modal" class="absolute -top-3 -right-3 sm:top-4 sm:right-4 w-10 h-10 rounded-full bg-[#ff7a00] text-black font-black flex items-center justify-center z-20 shadow-lg" aria-label="Close video">
+    <div class="relative w-full max-w-4xl bg-[#0e121a] border border-[#0ea5e9]/30 rounded-3xl p-6 shadow-2xl">
+      <button id="close-video-modal" class="absolute -top-3 -right-3 sm:top-4 sm:right-4 w-10 h-10 rounded-full bg-[#0ea5e9] text-white font-black flex items-center justify-center z-20 shadow-lg" aria-label="Close video">
         <i data-lucide="x" class="w-5 h-5"></i>
       </button>
       <div id="video-iframe-container" class="mt-2"></div>
@@ -977,22 +971,22 @@
 
   <!-- Inquiry Success Modal -->
   <div id="inquiry-success-modal" class="fixed inset-0 z-50 modal-backdrop hidden items-center justify-center p-4">
-    <div class="relative w-full max-w-md bg-[#121316] border border-[#ff7a00]/50 rounded-3xl p-8 text-center shadow-2xl">
-      <div class="w-16 h-16 rounded-full bg-[#ff7a00]/20 border border-[#ff7a00] text-[#ff7a00] flex items-center justify-center mx-auto mb-4">
+    <div class="relative w-full max-w-md bg-[#0e121a] border border-[#0ea5e9]/50 rounded-3xl p-8 text-center shadow-2xl">
+      <div class="w-16 h-16 rounded-full bg-[#0ea5e9]/20 border border-[#0ea5e9] text-[#38bdf8] flex items-center justify-center mx-auto mb-4">
         <i data-lucide="check-circle" class="w-8 h-8"></i>
       </div>
       <h3 class="text-2xl font-black text-white font-heading">Inquiry Received!</h3>
       <p class="text-slate-300 text-sm mt-3 leading-relaxed">
         Thank you, <span id="success-user-name" class="font-bold text-white"></span>! Our creative director and growth lead will review your goals and reach out within 2 hours.
       </p>
-      <button onclick="document.getElementById('inquiry-success-modal').classList.add('hidden')" class="btn-orange-pill w-full py-3 text-sm mt-6 font-bold justify-center">
+      <button onclick="document.getElementById('inquiry-success-modal').classList.add('hidden')" class="btn-blue-pill w-full py-3 text-sm mt-6 font-bold justify-center">
         Awesome, Close
       </button>
     </div>
   </div>
 
   <!-- Floating Quick WhatsApp Button -->
-  <a href="#" class="direct-whatsapp-btn floating-whatsapp w-12 h-12 rounded-full bg-[#ff7a00] hover:bg-[#ff8c1a] text-black flex items-center justify-center shadow-2xl font-bold" aria-label="WhatsApp">
+  <a href="#" class="direct-whatsapp-btn floating-whatsapp w-12 h-12 rounded-full bg-gradient-to-tr from-[#0ea5e9] to-[#2563eb] text-white flex items-center justify-center shadow-2xl font-bold" aria-label="WhatsApp">
     <i data-lucide="message-circle" class="w-6 h-6 fill-current"></i>
   </a>
 

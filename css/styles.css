@@ -1,32 +1,34 @@
 /* ==========================================================================
-   AGENCEE - RECONSTRUCTED DARK FLAME ORANGE AGENCY DESIGN SYSTEM
+   AGENCEE - BLACK & BLUE GRADIENT THEME DESIGN SYSTEM
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
-   1. CUSTOM PROPERTIES & DESIGN TOKENS
+   1. CUSTOM PROPERTIES & DESIGN TOKENS (BLACK & BLUE GRADIENT)
    -------------------------------------------------------------------------- */
 :root {
-  --bg-primary: #070709;
-  --bg-secondary: #0d0d10;
-  --bg-card: #121316;
-  --bg-card-hover: #17181c;
+  --bg-primary: #05070b;
+  --bg-secondary: #0a0d14;
+  --bg-card: #0e121a;
+  --bg-card-hover: #131824;
   --bg-card-subtle: rgba(255, 255, 255, 0.03);
 
-  --accent-orange: #ff7a00;
-  --accent-orange-hover: #ff8c1a;
-  --accent-orange-glow: rgba(255, 122, 0, 0.35);
-  --accent-amber: #ffa800;
+  --accent-blue: #0ea5e9;
+  --accent-cyan: #06b6d4;
+  --accent-electric: #2563eb;
+  --accent-indigo: #4f46e5;
+  --accent-blue-glow: rgba(14, 165, 233, 0.35);
 
   --border-subtle: rgba(255, 255, 255, 0.08);
   --border-card: rgba(255, 255, 255, 0.06);
-  --border-orange: rgba(255, 122, 0, 0.4);
+  --border-blue: rgba(14, 165, 233, 0.4);
 
   --text-primary: #ffffff;
-  --text-secondary: #9ea3b0;
-  --text-muted: #646875;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
 
-  --gradient-orange: linear-gradient(135deg, #ff7a00 0%, #ff9e2c 100%);
-  --gradient-glow: radial-gradient(circle at 50% 30%, rgba(255, 122, 0, 0.18) 0%, rgba(255, 100, 0, 0.04) 55%, transparent 80%);
+  --gradient-blue: linear-gradient(135deg, #0ea5e9 0%, #2563eb 50%, #4f46e5 100%);
+  --gradient-cyber: linear-gradient(135deg, #06b6d4 0%, #0ea5e9 50%, #3b82f6 100%);
+  --gradient-glow: radial-gradient(circle at 50% 30%, rgba(14, 165, 233, 0.18) 0%, rgba(37, 99, 235, 0.05) 55%, transparent 80%);
 }
 
 /* --------------------------------------------------------------------------
@@ -50,9 +52,9 @@ body {
   overflow-x: hidden;
   background-color: var(--bg-primary);
   background-image: 
-    radial-gradient(ellipse at 50% 0%, rgba(255, 122, 0, 0.16) 0%, transparent 60%),
-    radial-gradient(ellipse at 85% 35%, rgba(255, 100, 0, 0.08) 0%, transparent 50%),
-    radial-gradient(ellipse at 20% 70%, rgba(255, 140, 0, 0.05) 0%, transparent 50%);
+    radial-gradient(ellipse at 50% 0%, rgba(14, 165, 233, 0.18) 0%, transparent 60%),
+    radial-gradient(ellipse at 85% 35%, rgba(37, 99, 235, 0.1) 0%, transparent 50%),
+    radial-gradient(ellipse at 20% 70%, rgba(6, 182, 212, 0.06) 0%, transparent 50%);
   background-attachment: fixed;
 }
 
@@ -87,11 +89,11 @@ body {
   background: var(--bg-primary);
 }
 ::-webkit-scrollbar-thumb {
-  background: #23242a;
+  background: #1e2638;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--accent-orange);
+  background: var(--accent-blue);
 }
 
 /* Typography Headings */
@@ -101,17 +103,24 @@ h1, h2, h3, .font-heading {
 }
 
 ::selection {
-  background: rgba(255, 122, 0, 0.35);
+  background: rgba(14, 165, 233, 0.35);
   color: #ffffff;
 }
 
+/* Gradient Text */
+.text-gradient-blue {
+  background: var(--gradient-cyber);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /* --------------------------------------------------------------------------
-   3. BUTTONS & UI PILLS
+   3. BUTTONS & UI PILLS (BLACK & BLUE GRADIENT)
    -------------------------------------------------------------------------- */
-/* Orange Pill Button */
-.btn-orange-pill {
-  background: var(--gradient-orange);
-  color: #0b0b0e;
+/* Blue Gradient Pill Button */
+.btn-blue-pill {
+  background: var(--gradient-blue);
+  color: #ffffff;
   font-weight: 700;
   font-size: 0.875rem;
   padding: 0.75rem 1.5rem;
@@ -120,16 +129,16 @@ h1, h2, h3, .font-heading {
   align-items: center;
   gap: 0.5rem;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 8px 25px -4px rgba(255, 122, 0, 0.45);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 25px -4px rgba(14, 165, 233, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.25);
 }
-.btn-orange-pill:hover {
+.btn-blue-pill:hover {
   transform: translateY(-2px);
-  background: #ff8c1a;
-  box-shadow: 0 12px 30px -2px rgba(255, 122, 0, 0.6);
-  color: #000000;
+  background: linear-gradient(135deg, #38bdf8 0%, #2563eb 100%);
+  box-shadow: 0 12px 30px -2px rgba(14, 165, 233, 0.7);
+  color: #ffffff;
 }
-.btn-orange-pill:active {
+.btn-blue-pill:active {
   transform: translateY(1px);
 }
 
@@ -149,7 +158,7 @@ h1, h2, h3, .font-heading {
 }
 .btn-dark-pill:hover {
   background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 122, 0, 0.4);
+  border-color: rgba(14, 165, 233, 0.5);
   color: #ffffff;
   transform: translateY(-2px);
 }
@@ -167,12 +176,12 @@ h1, h2, h3, .font-heading {
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #e2e8f0;
+  color: #38bdf8;
 }
 
 /* Nav Center Capsule */
 .nav-capsule {
-  background: rgba(18, 19, 22, 0.75);
+  background: rgba(14, 18, 26, 0.8);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -185,22 +194,21 @@ h1, h2, h3, .font-heading {
   border-radius: 9999px;
   font-size: 0.8125rem;
   font-weight: 600;
-  color: #9ea3b0;
+  color: #94a3b8;
   transition: all 0.25s ease;
 }
 .nav-pill-link:hover {
   color: #ffffff;
 }
 .nav-pill-link.active {
-  background: #1c1d22;
-  color: #ffffff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  background: #182236;
+  color: #38bdf8;
+  box-shadow: 0 2px 10px rgba(14, 165, 233, 0.2);
 }
 
 /* --------------------------------------------------------------------------
-   4. CARDS, BENTO & VISUALS
+   4. CARDS & BENTO (BLACK & BLUE THEME)
    -------------------------------------------------------------------------- */
-/* Large Dark Agency Service & Feature Cards */
 .agencee-card {
   background: var(--bg-card);
   border: 1px solid var(--border-card);
@@ -212,9 +220,9 @@ h1, h2, h3, .font-heading {
 }
 .agencee-card:hover {
   background: var(--bg-card-hover);
-  border-color: rgba(255, 122, 0, 0.35);
+  border-color: rgba(14, 165, 233, 0.4);
   transform: translateY(-4px);
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8), 0 0 30px rgba(255, 122, 0, 0.12);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.85), 0 0 35px rgba(14, 165, 233, 0.15);
 }
 
 /* Circular Stats Cards */
@@ -222,7 +230,7 @@ h1, h2, h3, .font-heading {
   width: 170px;
   height: 170px;
   border-radius: 50%;
-  background: radial-gradient(circle, #18191e 0%, #111215 100%);
+  background: radial-gradient(circle, #141c2b 0%, #0c1017 100%);
   border: 1px solid rgba(255, 255, 255, 0.08);
   display: flex;
   flex-direction: column;
@@ -231,12 +239,12 @@ h1, h2, h3, .font-heading {
   text-align: center;
   padding: 1rem;
   transition: all 0.3s ease;
-  box-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.7);
 }
 .stat-circle-card:hover {
-  border-color: rgba(255, 122, 0, 0.5);
+  border-color: rgba(14, 165, 233, 0.5);
   transform: translateY(-4px) scale(1.03);
-  box-shadow: 0 20px 40px -5px rgba(0, 0, 0, 0.8), 0 0 25px rgba(255, 122, 0, 0.15);
+  box-shadow: 0 20px 40px -5px rgba(0, 0, 0, 0.9), 0 0 30px rgba(14, 165, 233, 0.25);
 }
 
 @media (max-width: 640px) {
@@ -267,12 +275,14 @@ h1, h2, h3, .font-heading {
   transform: scale(1.08);
 }
 .video-play-badge:hover .play-inner-circle {
-  background: var(--accent-orange);
-  color: #000000;
+  background: var(--gradient-blue);
+  color: #ffffff;
+  border-color: #38bdf8;
+  box-shadow: 0 0 30px rgba(14, 165, 233, 0.6);
 }
 
 /* --------------------------------------------------------------------------
-   6. BACKGROUND MARQUEE TEXT
+   6. BACKGROUND MARQUEE TEXT & LOGOS
    -------------------------------------------------------------------------- */
 @keyframes marqueeLeft {
   0% { transform: translateX(0%); }
@@ -298,7 +308,7 @@ h1, h2, h3, .font-heading {
 .logo-pill-card {
   height: 64px;
   padding: 0 2rem;
-  background: #121316;
+  background: #0e121a;
   border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 1.125rem;
   display: flex;
@@ -307,8 +317,8 @@ h1, h2, h3, .font-heading {
   transition: all 0.25s ease;
 }
 .logo-pill-card:hover {
-  border-color: rgba(255, 122, 0, 0.3);
-  background: #17181d;
+  border-color: rgba(14, 165, 233, 0.4);
+  background: #141a26;
   transform: translateY(-2px);
 }
 
@@ -329,7 +339,7 @@ h1, h2, h3, .font-heading {
 .reveal-delay-3 { transition-delay: 0.45s; }
 
 .modal-backdrop {
-  background: rgba(4, 4, 6, 0.85);
+  background: rgba(3, 5, 8, 0.88);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
 }
@@ -340,12 +350,12 @@ h1, h2, h3, .font-heading {
   bottom: 2rem;
   left: 2rem;
   z-index: 40;
-  box-shadow: 0 8px 25px rgba(255, 122, 0, 0.35);
+  box-shadow: 0 8px 25px rgba(14, 165, 233, 0.4);
   transition: all 0.3s ease;
 }
 .floating-whatsapp:hover {
   transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 12px 30px rgba(255, 122, 0, 0.55);
+  box-shadow: 0 12px 30px rgba(14, 165, 233, 0.6);
 }
 
 .back-to-top {
@@ -355,7 +365,7 @@ h1, h2, h3, .font-heading {
   z-index: 40;
   opacity: 0;
   visibility: hidden;
-  background: #15161a;
+  background: #101622;
   color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.12);
   transition: all 0.3s ease;
@@ -365,6 +375,6 @@ h1, h2, h3, .font-heading {
   visibility: visible;
 }
 .back-to-top:hover {
-  border-color: var(--accent-orange);
-  background: #1e1f25;
+  border-color: var(--accent-blue);
+  background: #182234;
 }
