@@ -1,0 +1,1864 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO & Social Meta Tags -->
+  <title>NEXURA Studio — Digital Marketing & Creative Graphic Design Agency</title>
+  <meta name="description" content="NEXURA is an award-winning creative agency specializing in digital marketing, high-impact graphic design, social media growth, and conversion-focused brand identity.">
+  <meta name="keywords" content="digital marketing agency, graphic design studio, branding agency, meta ads, google ads, social media management, creative design, conversion rate optimization">
+  <meta name="author" content="NEXURA Studio">
+  
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="NEXURA Studio — Digital Marketing & Creative Graphic Design Agency">
+  <meta property="og:description" content="We turn ideas into brands that get noticed. High-impact digital marketing and creative graphic design solutions that drive revenue.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1200&q=80">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: ['class', '[data-theme="dark"]'],
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              violet: '#7c3aed',
+              cyan: '#0284c7',
+              emerald: '#059669',
+              pink: '#e11d48',
+              amber: '#d97706'
+            }
+          },
+          fontFamily: {
+            heading: ['Syne', 'Space Grotesk', 'sans-serif'],
+            body: ['Plus Jakarta Sans', 'sans-serif'],
+            mono: ['Space Grotesk', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Schema.org JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MarketingAgency",
+    "name": "NEXURA Creative & Growth Studio",
+    "description": "Premium Digital Marketing, Branding, Graphic Design and Social Media Management Agency.",
+    "url": "https://nexuracreative.com",
+    "telephone": "+1-800-555-0199",
+    "email": "hello@nexuracreative.com",
+    "priceRange": "$$$"
+  }
+  </script>
+</head>
+
+<body class="bg-white dark:bg-[#07080d] text-slate-900 dark:text-slate-100 antialiased selection:bg-violet-500/20 selection:text-violet-950 relative">
+
+  <!-- Desktop Interactive Cursor Glow Follower -->
+  <div class="cursor-glow"></div>
+
+  <!-- ==========================================================================
+       TOP ANNOUNCEMENT BAR & STATUS
+       ========================================================================== -->
+  <div class="bg-slate-50/90 dark:bg-slate-900/80 border-b border-slate-200/80 dark:border-white/5 py-2 px-4 text-xs transition-colors">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border border-emerald-500/20 font-semibold">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+          Accepting Q3/Q4 Clients
+        </span>
+        <span class="text-slate-600 dark:text-slate-400 hidden sm:inline">• Free Comprehensive Strategy Audit with every inquiry</span>
+      </div>
+      <div class="flex items-center gap-4 text-slate-600 dark:text-slate-400">
+        <a href="tel:+18005550199" class="hover:text-violet-600 dark:hover:text-cyan-400 transition-colors flex items-center gap-1 font-medium">
+          <i data-lucide="phone-call" class="w-3.5 h-3.5 text-violet-600 dark:text-cyan-400"></i> +1 (800) 555-0199
+        </a>
+        <span class="text-slate-300 dark:text-slate-600 hidden md:inline">|</span>
+        <a href="#contact" class="hover:text-violet-600 dark:hover:text-violet-400 transition-colors hidden md:inline font-medium">Avg Response: &lt; 2h</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       STICKY NAVBAR (WITH THEME TOGGLE)
+       ========================================================================== -->
+  <header id="main-navbar" class="sticky top-0 z-50 transition-all duration-300 backdrop-blur-xl border-b border-slate-200/80 dark:border-white/5 bg-white/85 dark:bg-[#07080d]/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-violet-600 via-cyan-500 to-pink-500 p-[1.5px] shadow-md shadow-violet-500/20 group-hover:scale-105 transition-transform duration-300">
+          <div class="w-full h-full bg-white dark:bg-[#07080d] rounded-[10px] flex items-center justify-center">
+            <span class="font-extrabold text-lg text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-cyan-500 dark:from-violet-400 dark:to-cyan-400 font-heading">N</span>
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-xl font-black tracking-tight text-slate-900 dark:text-white font-heading group-hover:text-violet-600 dark:group-hover:text-violet-300 transition-colors">
+            NEXURA<span class="text-cyan-500">.</span>
+          </span>
+          <span class="text-[9px] uppercase tracking-[0.25em] text-slate-500 dark:text-slate-400 font-semibold -mt-1">Marketing & Design</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-slate-600 dark:text-slate-300">
+        <a href="#services" class="hover:text-violet-600 dark:hover:text-cyan-400 transition-colors">Services</a>
+        <a href="#work" class="hover:text-violet-600 dark:hover:text-cyan-400 transition-colors">Work</a>
+        <a href="#why-us" class="hover:text-violet-600 dark:hover:text-cyan-400 transition-colors">Why Us</a>
+        <a href="#process" class="hover:text-violet-600 dark:hover:text-cyan-400 transition-colors">Process</a>
+        <a href="#case-studies" class="hover:text-violet-600 dark:hover:text-cyan-400 transition-colors">Results</a>
+        <a href="#estimator" class="hover:text-violet-600 dark:hover:text-cyan-400 transition-colors">Estimator</a>
+        <a href="#testimonials" class="hover:text-violet-600 dark:hover:text-cyan-400 transition-colors">Testimonials</a>
+      </nav>
+
+      <!-- Navbar Actions (Theme Switcher + CTAs) -->
+      <div class="hidden lg:flex items-center gap-3">
+        <!-- White / Dark Theme Switcher Button -->
+        <button class="theme-toggle-btn w-10 h-10 rounded-full flex items-center justify-center text-slate-700 dark:text-slate-300 shadow-sm" aria-label="Toggle White/Dark Theme" title="Toggle White/Dark Theme">
+          <i data-lucide="moon" class="theme-toggle-icon w-4 h-4"></i>
+        </button>
+
+        <a href="#contact" class="btn-secondary px-5 py-2.5 text-xs uppercase tracking-wider">
+          Book Audit
+        </a>
+        <a href="#contact" class="btn-primary px-6 py-2.5 text-sm">
+          <span>Get Started</span>
+          <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+
+      <!-- Mobile Right Actions -->
+      <div class="flex items-center gap-2 lg:hidden">
+        <button class="theme-toggle-btn w-9 h-9 rounded-full flex items-center justify-center text-slate-700 dark:text-slate-300" aria-label="Toggle Theme">
+          <i data-lucide="moon" class="theme-toggle-icon w-4 h-4"></i>
+        </button>
+        <button id="mobile-menu-btn" class="p-2 rounded-lg bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300" aria-label="Toggle menu">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Slide-Over Drawer -->
+  <div id="mobile-drawer" class="fixed inset-0 z-50 bg-white/98 dark:bg-[#07080d]/95 backdrop-blur-2xl transition-transform duration-300 transform translate-x-full lg:hidden flex flex-col p-6 overflow-y-auto">
+    <div class="flex items-center justify-between pb-6 border-b border-slate-200 dark:border-white/10">
+      <div class="flex items-center gap-2">
+        <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-violet-600 to-cyan-500 flex items-center justify-center font-bold text-white">N</div>
+        <span class="text-lg font-bold text-slate-900 dark:text-white font-heading">NEXURA</span>
+      </div>
+      <button id="close-mobile-menu" class="p-2 rounded-lg bg-slate-100 dark:bg-white/5 text-slate-600 dark:text-slate-400" aria-label="Close menu">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <nav class="flex flex-col gap-5 py-8 text-lg font-bold text-slate-800 dark:text-slate-200">
+      <a href="#services" class="mobile-nav-link hover:text-violet-600 dark:hover:text-cyan-400 transition-colors">Services</a>
+      <a href="#work" class="mobile-nav-link hover:text-violet-600 dark:hover:text-cyan-400 transition-colors">Portfolio & Work</a>
+      <a href="#why-us" class="mobile-nav-link hover:text-violet-600 dark:hover:text-cyan-400 transition-colors">Why Choose Us</a>
+      <a href="#process" class="mobile-nav-link hover:text-violet-600 dark:hover:text-cyan-400 transition-colors">Our 4-Step Process</a>
+      <a href="#case-studies" class="mobile-nav-link hover:text-violet-600 dark:hover:text-cyan-400 transition-colors">Case Studies & ROI</a>
+      <a href="#estimator" class="mobile-nav-link hover:text-violet-600 dark:hover:text-cyan-400 transition-colors">Project Estimator</a>
+      <a href="#testimonials" class="mobile-nav-link hover:text-violet-600 dark:hover:text-cyan-400 transition-colors">Client Reviews</a>
+      <a href="#contact" class="mobile-nav-link hover:text-violet-600 dark:hover:text-cyan-400 transition-colors">Contact Us</a>
+    </nav>
+
+    <div class="mt-auto space-y-4 pt-6 border-t border-slate-200 dark:border-white/10">
+      <a href="#contact" class="mobile-nav-link btn-primary w-full py-3.5 text-center text-sm font-bold">
+        Get Started Now
+      </a>
+      <button class="direct-whatsapp-btn w-full py-3 rounded-full bg-emerald-50 dark:bg-emerald-600/20 text-emerald-700 dark:text-emerald-300 border border-emerald-500/30 flex items-center justify-center gap-2 text-sm font-semibold">
+        <i data-lucide="message-circle" class="w-4 h-4"></i> Chat on WhatsApp
+      </button>
+    </div>
+  </div>
+
+
+  <main>
+    <!-- ==========================================================================
+         1. HERO SECTION (WHITE THEME AESTHETIC)
+         ========================================================================== -->
+    <section class="relative min-h-[90vh] flex items-center justify-center pt-8 pb-20 overflow-hidden bg-white dark:bg-[#07080d]">
+      <!-- Background Dynamic Canvas -->
+      <canvas id="hero-canvas" class="absolute inset-0 pointer-events-none z-0 opacity-60"></canvas>
+
+      <!-- Ambient Glow Orbs -->
+      <div class="absolute top-1/4 left-1/4 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-violet-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+      <div class="absolute bottom-1/3 right-1/4 translate-x-1/2 w-96 h-96 bg-cyan-500/10 rounded-full blur-[130px] pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+        <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          <!-- Hero Left Content -->
+          <div class="lg:col-span-7 space-y-7 text-center lg:text-left">
+            
+            <!-- Award Badge -->
+            <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-violet-50 dark:bg-white/[0.04] border border-violet-200/80 dark:border-white/10 shadow-sm reveal">
+              <span class="flex h-2 w-2 relative">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-violet-500 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-violet-600"></span>
+              </span>
+              <span class="text-xs uppercase tracking-widest font-bold text-violet-900 dark:text-slate-300">
+                ✦ Award-Winning Marketing & Creative Studio
+              </span>
+            </div>
+
+            <!-- Primary Headline -->
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-[1.08] text-slate-900 dark:text-white font-heading reveal reveal-delay-1">
+              WE TURN IDEAS INTO <br class="hidden sm:inline">
+              <span class="text-gradient">BRANDS THAT GET NOTICED.</span>
+            </h1>
+
+            <!-- Supporting Text -->
+            <p class="text-lg sm:text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal reveal reveal-delay-2">
+              Digital marketing and creative design solutions that help businesses build a powerful online presence, attract customers, and grow.
+            </p>
+
+            <!-- Dual CTA Action Buttons -->
+            <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2 reveal reveal-delay-3">
+              <a href="#contact" class="btn-primary w-full sm:w-auto px-8 py-4 text-base">
+                <span>Get Started</span>
+                <i data-lucide="sparkles" class="w-5 h-5"></i>
+              </a>
+              <a href="#work" class="btn-secondary w-full sm:w-auto px-8 py-4 text-base">
+                <i data-lucide="play" class="w-4 h-4 text-violet-600 dark:text-cyan-400"></i>
+                <span>View Our Work</span>
+              </a>
+            </div>
+
+            <!-- Social Proof & Trust Statement -->
+            <div class="pt-6 border-t border-slate-200/80 dark:border-white/10 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-xs text-slate-600 dark:text-slate-400 reveal reveal-delay-4">
+              <div class="flex items-center gap-2">
+                <div class="flex text-amber-500">
+                  <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                  <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                </div>
+                <span class="font-bold text-slate-900 dark:text-slate-200">4.9 / 5.0</span>
+                <span>(150+ Verified Client Reviews)</span>
+              </div>
+              <div class="hidden sm:flex items-center gap-2 font-semibold text-slate-700 dark:text-slate-300">
+                <span class="w-1.5 h-1.5 rounded-full bg-violet-600"></span>
+                <span>Creative Strategy • Digital Marketing • Graphic Design</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Hero Right Rich Visual Showcase Composition -->
+          <div class="lg:col-span-5 relative reveal reveal-delay-2">
+            <div class="relative w-full max-w-lg mx-auto">
+              
+              <!-- Main Central Showcase Card -->
+              <div class="glass-panel rounded-3xl p-6 sm:p-7 border border-slate-200/80 dark:border-white/15 relative z-20 backdrop-blur-2xl animate-float-slow bg-white/95 dark:bg-[#0d0f18]/90">
+                
+                <!-- Card Header -->
+                <div class="flex items-center justify-between pb-4 border-b border-slate-100 dark:border-white/10">
+                  <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-xl bg-violet-100 dark:bg-violet-600/30 border border-violet-200 dark:border-violet-400/30 flex items-center justify-center text-violet-700 dark:text-violet-400">
+                      <i data-lucide="trending-up" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                      <h4 class="text-sm font-bold text-slate-900 dark:text-white font-heading">Campaign Live Pulse</h4>
+                      <p class="text-[11px] text-slate-500 dark:text-slate-400">Omnichannel Marketing Engine</p>
+                    </div>
+                  </div>
+                  <span class="px-2.5 py-1 rounded-full text-[10px] font-bold bg-emerald-50 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-500/30 flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> LIVE
+                  </span>
+                </div>
+
+                <!-- Simulated Performance Graph -->
+                <div class="my-5">
+                  <div class="flex justify-between items-baseline mb-2">
+                    <span class="text-xs text-slate-500 dark:text-slate-400">Conversion Velocity</span>
+                    <span class="text-xl font-black text-emerald-600 dark:text-emerald-400 font-heading">+284.6%</span>
+                  </div>
+                  
+                  <div class="h-28 w-full bg-slate-50 dark:bg-slate-900/60 rounded-xl p-3 border border-slate-200/60 dark:border-white/5 flex items-end justify-between gap-2">
+                    <div class="w-full bg-violet-200 dark:bg-violet-600/30 rounded-t h-[30%] hover:bg-violet-400 transition-all"></div>
+                    <div class="w-full bg-violet-300 dark:bg-violet-600/40 rounded-t h-[45%] hover:bg-violet-400 transition-all"></div>
+                    <div class="w-full bg-violet-400 dark:bg-violet-600/50 rounded-t h-[40%] hover:bg-violet-400 transition-all"></div>
+                    <div class="w-full bg-cyan-300 dark:bg-cyan-500/60 rounded-t h-[65%] hover:bg-cyan-500 transition-all"></div>
+                    <div class="w-full bg-cyan-400 dark:bg-cyan-500/70 rounded-t h-[60%] hover:bg-cyan-500 transition-all"></div>
+                    <div class="w-full bg-cyan-500 dark:bg-cyan-500/80 rounded-t h-[85%] hover:bg-cyan-500 transition-all"></div>
+                    <div class="w-full bg-gradient-to-t from-violet-600 to-cyan-500 rounded-t h-[100%] shadow-md shadow-violet-500/30"></div>
+                  </div>
+                </div>
+
+                <!-- Three Key Pillars Metric Chips -->
+                <div class="grid grid-cols-3 gap-2 pt-2 text-center">
+                  <div class="bg-slate-50 dark:bg-white/5 rounded-xl p-2.5 border border-slate-200/60 dark:border-white/5">
+                    <div class="text-xs text-slate-500 dark:text-slate-400">ROAS</div>
+                    <div class="text-sm font-black text-violet-700 dark:text-violet-300 font-heading">4.6X</div>
+                  </div>
+                  <div class="bg-slate-50 dark:bg-white/5 rounded-xl p-2.5 border border-slate-200/60 dark:border-white/5">
+                    <div class="text-xs text-slate-500 dark:text-slate-400">CTR</div>
+                    <div class="text-sm font-black text-cyan-700 dark:text-cyan-300 font-heading">8.4%</div>
+                  </div>
+                  <div class="bg-slate-50 dark:bg-white/5 rounded-xl p-2.5 border border-slate-200/60 dark:border-white/5">
+                    <div class="text-xs text-slate-500 dark:text-slate-400">Design Score</div>
+                    <div class="text-sm font-black text-pink-700 dark:text-pink-300 font-heading">99/100</div>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Floating Creative Card 1: Brand Identity & Typography -->
+              <div class="absolute -top-6 -right-6 z-30 bg-white/95 dark:bg-[#0d0f18]/90 border border-slate-200 dark:border-violet-500/30 backdrop-blur-xl rounded-2xl p-4 shadow-xl shadow-slate-900/5 animate-float-delayed hidden sm:block">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-pink-500 to-violet-600 flex items-center justify-center text-white shadow-md">
+                    <i data-lucide="palette" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <div class="text-xs font-bold text-slate-900 dark:text-white font-heading">Brand Identity Suite</div>
+                    <div class="flex items-center gap-1.5 mt-1">
+                      <span class="w-3 h-3 rounded-full bg-violet-600"></span>
+                      <span class="w-3 h-3 rounded-full bg-cyan-500"></span>
+                      <span class="w-3 h-3 rounded-full bg-pink-500"></span>
+                      <span class="text-[10px] text-slate-500 dark:text-slate-400 font-mono">#HexTokens</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Floating Creative Card 2: Viral Social & Leads -->
+              <div class="absolute -bottom-8 -left-6 z-30 bg-white/95 dark:bg-[#0d0f18]/90 border border-slate-200 dark:border-cyan-500/30 backdrop-blur-xl rounded-2xl p-4 shadow-xl shadow-slate-900/5 animate-float-slow hidden sm:block">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-500 to-emerald-500 flex items-center justify-center text-white shadow-md">
+                    <i data-lucide="share-2" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <div class="text-xs font-bold text-slate-900 dark:text-white font-heading">Viral Reach & Leads</div>
+                    <div class="text-[11px] text-emerald-700 dark:text-emerald-400 font-bold mt-0.5">🔥 1.2M+ Viral Impressions</div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         2. SOCIAL PROOF & LIVE STATS SECTION
+         ========================================================================== -->
+    <section class="py-16 relative border-y border-slate-200/80 dark:border-white/5 bg-slate-50/70 dark:bg-[#0a0c14]/90 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Animated Numbers Grid -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-14">
+          
+          <!-- Metric 1: Businesses Helped -->
+          <div class="glass-panel rounded-2xl p-6 text-center reveal">
+            <div class="text-3xl sm:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-cyan-500 font-heading"
+                 data-counter="250" data-prefix="+" data-suffix="">
+              +0
+            </div>
+            <div class="text-sm font-bold text-slate-900 dark:text-white mt-2">Businesses Helped</div>
+            <div class="text-xs text-slate-500 dark:text-slate-400 mt-1">High-growth startups & brands</div>
+          </div>
+
+          <!-- Metric 2: Projects Completed -->
+          <div class="glass-panel rounded-2xl p-6 text-center reveal reveal-delay-1">
+            <div class="text-3xl sm:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-emerald-500 font-heading"
+                 data-counter="650" data-prefix="+" data-suffix="">
+              +0
+            </div>
+            <div class="text-sm font-bold text-slate-900 dark:text-white mt-2">Projects Completed</div>
+            <div class="text-xs text-slate-500 dark:text-slate-400 mt-1">Brand identities, funnels & assets</div>
+          </div>
+
+          <!-- Metric 3: Creative Campaigns -->
+          <div class="glass-panel rounded-2xl p-6 text-center reveal reveal-delay-2">
+            <div class="text-3xl sm:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-violet-600 font-heading"
+                 data-counter="1200" data-prefix="+" data-suffix="">
+              +0
+            </div>
+            <div class="text-sm font-bold text-slate-900 dark:text-white mt-2">Creative Campaigns</div>
+            <div class="text-xs text-slate-500 dark:text-slate-400 mt-1">Ad creatives, reels & graphics</div>
+          </div>
+
+          <!-- Metric 4: Client Satisfaction -->
+          <div class="glass-panel rounded-2xl p-6 text-center reveal reveal-delay-3">
+            <div class="text-3xl sm:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-emerald-600 font-heading"
+                 data-counter="98.6" data-prefix="" data-suffix="%" data-decimals="1">
+              0%
+            </div>
+            <div class="text-sm font-bold text-slate-900 dark:text-white mt-2">Client Satisfaction</div>
+            <div class="text-xs text-slate-500 dark:text-slate-400 mt-1">Retention rate & 5-star reviews</div>
+          </div>
+
+        </div>
+
+        <!-- Client & Partner Brand Logo Marquee -->
+        <div class="relative overflow-hidden py-4 border-t border-slate-200/80 dark:border-white/5">
+          <div class="text-center text-xs uppercase tracking-widest text-slate-500 font-bold mb-6">
+            Trusted by Ambitious Brands & Founders Worldwide
+          </div>
+          
+          <div class="marquee-track flex items-center gap-12 sm:gap-16 opacity-85">
+            <span class="text-xl sm:text-2xl font-black text-slate-800 dark:text-slate-300 font-heading flex items-center gap-2">
+              <i data-lucide="cpu" class="w-6 h-6 text-violet-600"></i> TECHFLOW
+            </span>
+            <span class="text-xl sm:text-2xl font-black text-slate-800 dark:text-slate-300 font-heading flex items-center gap-2">
+              <i data-lucide="sparkles" class="w-6 h-6 text-cyan-600"></i> LUMINA D2C
+            </span>
+            <span class="text-xl sm:text-2xl font-black text-slate-800 dark:text-slate-300 font-heading flex items-center gap-2">
+              <i data-lucide="shield-check" class="w-6 h-6 text-emerald-600"></i> APEX CAPITAL
+            </span>
+            <span class="text-xl sm:text-2xl font-black text-slate-800 dark:text-slate-300 font-heading flex items-center gap-2">
+              <i data-lucide="layers" class="w-6 h-6 text-pink-600"></i> HORIZON LABS
+            </span>
+            <span class="text-xl sm:text-2xl font-black text-slate-800 dark:text-slate-300 font-heading flex items-center gap-2">
+              <i data-lucide="activity" class="w-6 h-6 text-amber-500"></i> BLOOM HEALTH
+            </span>
+            <span class="text-xl sm:text-2xl font-black text-slate-800 dark:text-slate-300 font-heading flex items-center gap-2">
+              <i data-lucide="zap" class="w-6 h-6 text-violet-600"></i> VELOX VELO
+            </span>
+            <span class="text-xl sm:text-2xl font-black text-slate-800 dark:text-slate-300 font-heading flex items-center gap-2">
+              <i data-lucide="globe" class="w-6 h-6 text-cyan-600"></i> PULSE MEDIA
+            </span>
+            <!-- Repeat for seamless marquee -->
+            <span class="text-xl sm:text-2xl font-black text-slate-800 dark:text-slate-300 font-heading flex items-center gap-2">
+              <i data-lucide="cpu" class="w-6 h-6 text-violet-600"></i> TECHFLOW
+            </span>
+            <span class="text-xl sm:text-2xl font-black text-slate-800 dark:text-slate-300 font-heading flex items-center gap-2">
+              <i data-lucide="sparkles" class="w-6 h-6 text-cyan-600"></i> LUMINA D2C
+            </span>
+            <span class="text-xl sm:text-2xl font-black text-slate-800 dark:text-slate-300 font-heading flex items-center gap-2">
+              <i data-lucide="shield-check" class="w-6 h-6 text-emerald-600"></i> APEX CAPITAL
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         3. SERVICES SECTION (4 CORE PILLARS)
+         ========================================================================== -->
+    <section id="services" class="py-24 relative overflow-hidden bg-white dark:bg-[#07080d]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4 reveal">
+          <span class="px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-violet-700 dark:text-violet-300 bg-violet-50 dark:bg-violet-950/60 border border-violet-200 dark:border-violet-500/30">
+            What We Do
+          </span>
+          <h2 class="text-3xl sm:text-5xl font-black tracking-tight font-heading text-slate-900 dark:text-white">
+            FULL-SERVICE <span class="text-gradient">GROWTH & DESIGN</span> SUITE
+          </h2>
+          <p class="text-slate-600 dark:text-slate-400 text-base sm:text-lg">
+            We merge performance marketing rigor with world-class visual aesthetics to build brands that dominate their market.
+          </p>
+        </div>
+
+        <!-- 4 Core Service Cards Grid -->
+        <div class="grid md:grid-cols-2 gap-8">
+          
+          <!-- SERVICE 1: DIGITAL MARKETING -->
+          <div class="bento-card p-8 group reveal">
+            <div class="bento-glow-spot bg-violet-500"></div>
+            
+            <div class="flex items-start justify-between mb-6">
+              <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-violet-600 to-cyan-500 flex items-center justify-center text-white shadow-md shadow-violet-500/25 group-hover:scale-110 transition-transform">
+                <i data-lucide="target" class="w-7 h-7"></i>
+              </div>
+              <span class="text-3xl font-black text-slate-300 dark:text-slate-700 font-heading group-hover:text-violet-500 transition-colors">01</span>
+            </div>
+
+            <h3 class="text-2xl font-bold text-slate-900 dark:text-white font-heading mb-3 group-hover:text-violet-600 dark:group-hover:text-cyan-300 transition-colors">
+              Digital Marketing
+            </h3>
+            <p class="text-slate-600 dark:text-slate-400 text-sm mb-6 leading-relaxed">
+              Targeted, high-ROI paid acquisition funnels and organic search strategies engineered to convert clicks into lifelong paying customers.
+            </p>
+
+            <!-- Sub-Services Tags/List -->
+            <div class="grid grid-cols-2 gap-2.5 pt-4 border-t border-slate-200/80 dark:border-white/10">
+              <div class="flex items-center gap-2 text-xs font-semibold text-slate-700 dark:text-slate-300">
+                <i data-lucide="check" class="w-4 h-4 text-cyan-600 dark:text-cyan-400"></i> Social Media Marketing
+              </div>
+              <div class="flex items-center gap-2 text-xs font-semibold text-slate-700 dark:text-slate-300">
+                <i data-lucide="check" class="w-4 h-4 text-cyan-600 dark:text-cyan-400"></i> Google Ads & P-Max
+              </div>
+              <div class="flex items-center gap-2 text-xs font-semibold text-slate-700 dark:text-slate-300">
+                <i data-lucide="check" class="w-4 h-4 text-cyan-600 dark:text-cyan-400"></i> Meta Ads (FB & IG)
+              </div>
+              <div class="flex items-center gap-2 text-xs font-semibold text-slate-700 dark:text-slate-300">
+                <i data-lucide="check" class="w-4 h-4 text-cyan-600 dark:text-cyan-400"></i> Lead Generation Funnels
+              </div>
+              <div class="flex items-center gap-2 text-xs font-semibold text-slate-700 dark:text-slate-300">
+                <i data-lucide="check" class="w-4 h-4 text-cyan-600 dark:text-cyan-400"></i> Content Marketing
+              </div>
+              <div class="flex items-center gap-2 text-xs font-semibold text-slate-700 dark:text-slate-300">
+                <i data-lucide="check" class="w-4 h-4 text-cyan-600 dark:text-cyan-400"></i> SEO & Search Authority
+              </div>
+              <div class="flex items-center gap-2 text-xs font-semibold text-slate-700 dark:text-slate-300 col-span-2">
+                <i data-lucide="check" class="w-4 h-4 text-cyan-600 dark:text-cyan-400"></i> Omnichannel Growth Strategy
+              </div>
+            </div>
+
+            <div class="mt-8 pt-4 border-t border-slate-100 dark:border-white/5 flex items-center justify-between">
+              <a href="#contact" class="text-xs font-bold uppercase tracking-wider text-violet-600 dark:text-violet-400 hover:text-cyan-600 flex items-center gap-1.5 transition-colors">
+                Request Marketing Audit <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+              <span class="text-[11px] font-semibold text-slate-500">Avg ROAS: 3.8X</span>
+            </div>
+          </div>
+
+          <!-- SERVICE 2: GRAPHIC DESIGN -->
+          <div class="bento-card p-8 group reveal reveal-delay-1">
+            <div class="bento-glow-spot bg-pink-500"></div>
+
+            <div class="flex items-start justify-between mb-6">
+              <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-pink-500 to-violet-600 flex items-center justify-center text-white shadow-md shadow-pink-500/25 group-hover:scale-110 transition-transform">
+                <i data-lucide="sparkles" class="w-7 h-7"></i>
+              </div>
+              <span class="text-3xl font-black text-slate-300 dark:text-slate-700 font-heading group-hover:text-pink-500 transition-colors">02</span>
+            </div>
+
+            <h3 class="text-2xl font-bold text-slate-900 dark:text-white font-heading mb-3 group-hover:text-pink-600 dark:group-hover:text-pink-300 transition-colors">
+              Graphic Design
+            </h3>
+            <p class="text-slate-600 dark:text-slate-400 text-sm mb-6 leading-relaxed">
+              Bespoke visual craftsmanship that commands authority. From luxury logos to high-converting social creatives and packaging.
+            </p>
+
+            <!-- Sub-Services Tags/List -->
+            <div class="grid grid-cols-2 gap-2.5 pt-4 border-t border-slate-200/80 dark:border-white/10">
+              <div class="flex items-center gap-2 text-xs font-semibold text-slate-700 dark:text-slate-300">
+                <i data-lucide="check" class="w-4 h-4 text-pink-600 dark:text-pink-400"></i> Logo Design & Monograms
+              </div>
+              <div class="flex items-center gap-2 text-xs font-semibold text-slate-700 dark:text-slate-300">
+                <i data-lucide="check" class="w-4 h-4 text-pink-600 dark:text-pink-400"></i> Brand Identity Systems
+              </div>
+              <div class="flex items-center gap-2 text-xs font-semibold text-slate-700 dark:text-slate-300">
+                <i data-lucide="check" class="w-4 h-4 text-pink-600 dark:text-pink-400"></i> Social Media Creatives
+              </div>
+              <div class="flex items-center gap-2 text-xs font-semibold text-slate-700 dark:text-slate-300">
+                <i data-lucide="check" class="w-4 h-4 text-pink-600 dark:text-pink-400"></i> Posters & Banners
+              </div>
+              <div class="flex items-center gap-2 text-xs font-semibold text-slate-700 dark:text-slate-300">
+                <i data-lucide="check" class="w-4 h-4 text-pink-600 dark:text-pink-400"></i> Brochures & Pitch Decks
+              </div>
+              <div class="flex items-center gap-2 text-xs font-semibold text-slate-700 dark:text-slate-300">
+                <i data-lucide="check" class="w-4 h-4 text-pink-600 dark:text-pink-400"></i> Luxury Business Cards
+              </div>
+              <div class="flex items-center gap-2 text-xs font-semibold text-slate-700 dark:text-slate-300">
+                <i data-lucide="check" class="w-4 h-4 text-pink-600 dark:text-pink-400"></i> Performance Ad Packs
+              </div>
+              <div class="flex items-center gap-2 text-xs font-semibold text-slate-700 dark:text-slate-300">
+                <i data-lucide="check" class="w-4 h-4 text-pink-600 dark:text-pink-400"></i> Packaging & 3D Mockups
+              </div>
+            </div>
+
+            <div class="mt-8 pt-4 border-t border-slate-100 dark:border-white/5 flex items-center justify-between">
+              <a href="#contact" class="text-xs font-bold uppercase tracking-wider text-pink-600 dark:text-pink-400 hover:text-cyan-600 flex items-center gap-1.5 transition-colors">
+                Explore Design Services <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+              <span class="text-[11px] font-semibold text-slate-500">100% Vector & Print-Ready</span>
+            </div>
+          </div>
+
+          <!-- SERVICE 3: SOCIAL MEDIA MANAGEMENT -->
+          <div class="bento-card p-8 group reveal">
+            <div class="bento-glow-spot bg-cyan-500"></div>
+
+            <div class="flex items-start justify-between mb-6">
+              <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-cyan-500 to-emerald-500 flex items-center justify-center text-white shadow-md shadow-cyan-500/25 group-hover:scale-110 transition-transform">
+                <i data-lucide="share-2" class="w-7 h-7"></i>
+              </div>
+              <span class="text-3xl font-black text-slate-300 dark:text-slate-700 font-heading group-hover:text-cyan-500 transition-colors">03</span>
+            </div>
+
+            <h3 class="text-2xl font-bold text-slate-900 dark:text-white font-heading mb-3 group-hover:text-emerald-600 dark:group-hover:text-emerald-300 transition-colors">
+              Social Media Management
+            </h3>
+            <p class="text-slate-600 dark:text-slate-400 text-sm mb-6 leading-relaxed">
+              Complete end-to-end community building, viral video production, and daily management to transform followers into passionate brand advocates.
+            </p>
+
+            <!-- Sub-Services Tags/List -->
+            <div class="grid grid-cols-2 gap-2.5 pt-4 border-t border-slate-200/80 dark:border-white/10">
+              <div class="flex items-center gap-2 text-xs font-semibold text-slate-700 dark:text-slate-300">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-600 dark:text-emerald-400"></i> Content Planning & Calendar
+              </div>
+              <div class="flex items-center gap-2 text-xs font-semibold text-slate-700 dark:text-slate-300">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-600 dark:text-emerald-400"></i> Viral Creative Posts
+              </div>
+              <div class="flex items-center gap-2 text-xs font-semibold text-slate-700 dark:text-slate-300">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-600 dark:text-emerald-400"></i> Reels & Short Video Edits
+              </div>
+              <div class="flex items-center gap-2 text-xs font-semibold text-slate-700 dark:text-slate-300">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-600 dark:text-emerald-400"></i> Full Page Management
+              </div>
+              <div class="flex items-center gap-2 text-xs font-semibold text-slate-700 dark:text-slate-300 col-span-2">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-600 dark:text-emerald-400"></i> Audience Engagement & Community Growth
+              </div>
+            </div>
+
+            <div class="mt-8 pt-4 border-t border-slate-100 dark:border-white/5 flex items-center justify-between">
+              <a href="#contact" class="text-xs font-bold uppercase tracking-wider text-cyan-600 dark:text-cyan-400 hover:text-emerald-600 flex items-center gap-1.5 transition-colors">
+                Scale Your Social Channels <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+              <span class="text-[11px] font-semibold text-slate-500">IG • TikTok • LinkedIn • X</span>
+            </div>
+          </div>
+
+          <!-- SERVICE 4: BRANDING & STRATEGY -->
+          <div class="bento-card p-8 group reveal reveal-delay-1">
+            <div class="bento-glow-spot bg-amber-500"></div>
+
+            <div class="flex items-start justify-between mb-6">
+              <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-amber-500 to-violet-600 flex items-center justify-center text-white shadow-md shadow-amber-500/25 group-hover:scale-110 transition-transform">
+                <i data-lucide="crown" class="w-7 h-7"></i>
+              </div>
+              <span class="text-3xl font-black text-slate-300 dark:text-slate-700 font-heading group-hover:text-amber-500 transition-colors">04</span>
+            </div>
+
+            <h3 class="text-2xl font-bold text-slate-900 dark:text-white font-heading mb-3 group-hover:text-amber-600 dark:group-hover:text-amber-300 transition-colors">
+              Brand Strategy & Identity
+            </h3>
+            <p class="text-slate-600 dark:text-slate-400 text-sm mb-6 leading-relaxed">
+              We define your market differentiation, narrative architecture, tone of voice, and visual guidelines so your business stands unforgettable.
+            </p>
+
+            <!-- Sub-Services Tags/List -->
+            <div class="grid grid-cols-2 gap-2.5 pt-4 border-t border-slate-200/80 dark:border-white/10">
+              <div class="flex items-center gap-2 text-xs font-semibold text-slate-700 dark:text-slate-300">
+                <i data-lucide="check" class="w-4 h-4 text-amber-600 dark:text-amber-400"></i> Market Brand Strategy
+              </div>
+              <div class="flex items-center gap-2 text-xs font-semibold text-slate-700 dark:text-slate-300">
+                <i data-lucide="check" class="w-4 h-4 text-amber-600 dark:text-amber-400"></i> Complete Logo & Identity
+              </div>
+              <div class="flex items-center gap-2 text-xs font-semibold text-slate-700 dark:text-slate-300">
+                <i data-lucide="check" class="w-4 h-4 text-amber-600 dark:text-amber-400"></i> Brand Guidelines Book
+              </div>
+              <div class="flex items-center gap-2 text-xs font-semibold text-slate-700 dark:text-slate-300">
+                <i data-lucide="check" class="w-4 h-4 text-amber-600 dark:text-amber-400"></i> Tone of Voice & Copy
+              </div>
+              <div class="flex items-center gap-2 text-xs font-semibold text-slate-700 dark:text-slate-300 col-span-2">
+                <i data-lucide="check" class="w-4 h-4 text-amber-600 dark:text-amber-400"></i> Full Marketing Collateral Suite
+              </div>
+            </div>
+
+            <div class="mt-8 pt-4 border-t border-slate-100 dark:border-white/5 flex items-center justify-between">
+              <a href="#contact" class="text-xs font-bold uppercase tracking-wider text-amber-600 dark:text-amber-400 hover:text-cyan-600 flex items-center gap-1.5 transition-colors">
+                Start Brand Transformation <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+              <span class="text-[11px] font-semibold text-slate-500">Enterprise Brand Book Included</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         4. FEATURED WORK / PORTFOLIO
+         ========================================================================== -->
+    <section id="work" class="py-24 relative bg-slate-50/60 dark:bg-[#090b12] border-t border-slate-200/80 dark:border-white/5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Title & Filter Tabs -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6 reveal">
+          <div>
+            <span class="px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-cyan-700 dark:text-cyan-400 bg-cyan-50 dark:bg-cyan-950/60 border border-cyan-200 dark:border-cyan-500/30">
+              Selected Works
+            </span>
+            <h2 class="text-3xl sm:text-5xl font-black tracking-tight font-heading text-slate-900 dark:text-white mt-3">
+              CRAFTED FOR <span class="text-gradient-cyan">IMPACT & SCALE</span>
+            </h2>
+          </div>
+
+          <!-- Category Filter Tabs -->
+          <div class="flex flex-wrap items-center gap-2">
+            <button class="portfolio-filter-btn active px-4 py-2 rounded-full text-xs font-bold transition-all border border-violet-600 bg-violet-600 text-white" data-filter="all">
+              All Projects
+            </button>
+            <button class="portfolio-filter-btn px-4 py-2 rounded-full text-xs font-bold transition-all border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 text-slate-700 dark:text-slate-300 hover:border-violet-500" data-filter="branding">
+              Branding
+            </button>
+            <button class="portfolio-filter-btn px-4 py-2 rounded-full text-xs font-bold transition-all border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 text-slate-700 dark:text-slate-300 hover:border-violet-500" data-filter="social-media">
+              Social Media
+            </button>
+            <button class="portfolio-filter-btn px-4 py-2 rounded-full text-xs font-bold transition-all border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 text-slate-700 dark:text-slate-300 hover:border-violet-500" data-filter="advertising">
+              Advertising
+            </button>
+            <button class="portfolio-filter-btn px-4 py-2 rounded-full text-xs font-bold transition-all border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 text-slate-700 dark:text-slate-300 hover:border-violet-500" data-filter="graphic-design">
+              Graphic Design
+            </button>
+            <button class="portfolio-filter-btn px-4 py-2 rounded-full text-xs font-bold transition-all border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 text-slate-700 dark:text-slate-300 hover:border-violet-500" data-filter="digital-campaigns">
+              Digital Campaigns
+            </button>
+          </div>
+        </div>
+
+        <!-- Portfolio Cards Grid -->
+        <div id="portfolio-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- PROJECT 1: Velox Kinetic -->
+          <div class="portfolio-item portfolio-card group cursor-pointer reveal" data-category="branding" data-project-id="velox">
+            <div class="portfolio-img-container h-64 relative flex items-center justify-center p-8" style="background: linear-gradient(135deg, #1e1b4b 0%, #312e81 40%, #06b6d4 100%);">
+              <div class="text-center">
+                <div class="text-3xl font-black tracking-wider text-white font-heading mb-1 group-hover:scale-105 transition-transform">VELOX</div>
+                <div class="text-[10px] uppercase tracking-[0.3em] text-cyan-200">Kinetic Motors Rebrand</div>
+              </div>
+              <span class="absolute top-4 left-4 px-3 py-1 text-[11px] font-bold rounded-full bg-black/40 text-cyan-300 backdrop-blur-md border border-cyan-500/30">
+                Branding
+              </span>
+              <span class="absolute bottom-4 right-4 px-3 py-1 text-xs font-extrabold rounded-full bg-emerald-400 text-slate-950 shadow-md">
+                +340% Sales
+              </span>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center justify-between text-xs text-slate-500 dark:text-slate-400 mb-1">
+                <span>EV & Clean Tech</span>
+                <span class="font-semibold text-violet-600 dark:text-violet-400">Case Study</span>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 dark:text-white font-heading group-hover:text-violet-600 dark:group-hover:text-cyan-400 transition-colors">
+                Velox Kinetic
+              </h3>
+              <p class="text-slate-600 dark:text-slate-400 text-xs mt-2 line-clamp-2">
+                Full visual identity, 3D vehicle assets, and multi-channel performance launch.
+              </p>
+              <div class="mt-4 pt-4 border-t border-slate-100 dark:border-white/5 flex items-center justify-between text-xs text-violet-600 dark:text-violet-400 font-bold">
+                <span>View Full Case Study</span>
+                <i data-lucide="arrow-up-right" class="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 2: Aura Botanicals -->
+          <div class="portfolio-item portfolio-card group cursor-pointer reveal reveal-delay-1" data-category="graphic-design" data-project-id="aura">
+            <div class="portfolio-img-container h-64 relative flex items-center justify-center p-8" style="background: linear-gradient(135deg, #064e3b 0%, #047857 50%, #10b981 100%);">
+              <div class="text-center">
+                <div class="text-3xl font-serif italic text-white font-heading mb-1 group-hover:scale-105 transition-transform">AURA</div>
+                <div class="text-[10px] uppercase tracking-[0.3em] text-emerald-100">Luxury Skincare Packaging</div>
+              </div>
+              <span class="absolute top-4 left-4 px-3 py-1 text-[11px] font-bold rounded-full bg-black/40 text-emerald-300 backdrop-blur-md border border-emerald-500/30">
+                Graphic Design
+              </span>
+              <span class="absolute bottom-4 right-4 px-3 py-1 text-xs font-extrabold rounded-full bg-emerald-400 text-slate-950 shadow-md">
+                +190% CVR
+              </span>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center justify-between text-xs text-slate-500 dark:text-slate-400 mb-1">
+                <span>Beauty & D2C</span>
+                <span class="font-semibold text-emerald-600 dark:text-emerald-400">Case Study</span>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 dark:text-white font-heading group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
+                Aura Botanicals
+              </h3>
+              <p class="text-slate-600 dark:text-slate-400 text-xs mt-2 line-clamp-2">
+                Luxury eco packaging design, retail collateral, and high-converting Instagram ad suite.
+              </p>
+              <div class="mt-4 pt-4 border-t border-slate-100 dark:border-white/5 flex items-center justify-between text-xs text-emerald-600 dark:text-emerald-400 font-bold">
+                <span>View Full Case Study</span>
+                <i data-lucide="arrow-up-right" class="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 3: NovaCrest Capital -->
+          <div class="portfolio-item portfolio-card group cursor-pointer reveal reveal-delay-2" data-category="digital-campaigns" data-project-id="novacrest">
+            <div class="portfolio-img-container h-64 relative flex items-center justify-center p-8" style="background: linear-gradient(135deg, #18181b 0%, #27272a 50%, #8b5cf6 100%);">
+              <div class="text-center">
+                <div class="text-3xl font-black text-white font-heading mb-1 group-hover:scale-105 transition-transform">NOVACREST</div>
+                <div class="text-[10px] uppercase tracking-[0.3em] text-violet-200">Wealth Pipeline Funnels</div>
+              </div>
+              <span class="absolute top-4 left-4 px-3 py-1 text-[11px] font-bold rounded-full bg-black/40 text-violet-300 backdrop-blur-md border border-violet-500/30">
+                Digital Campaigns
+              </span>
+              <span class="absolute bottom-4 right-4 px-3 py-1 text-xs font-extrabold rounded-full bg-violet-400 text-slate-950 shadow-md">
+                $4.2M Leads
+              </span>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center justify-between text-xs text-slate-500 dark:text-slate-400 mb-1">
+                <span>B2B Finance</span>
+                <span class="font-semibold text-violet-600 dark:text-violet-400">Case Study</span>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 dark:text-white font-heading group-hover:text-violet-600 dark:group-hover:text-violet-400 transition-colors">
+                NovaCrest Capital
+              </h3>
+              <p class="text-slate-600 dark:text-slate-400 text-xs mt-2 line-clamp-2">
+                High-ticket lead generation funnels, LinkedIn authority branding, and automated email nurturing.
+              </p>
+              <div class="mt-4 pt-4 border-t border-slate-100 dark:border-white/5 flex items-center justify-between text-xs text-violet-600 dark:text-violet-400 font-bold">
+                <span>View Full Case Study</span>
+                <i data-lucide="arrow-up-right" class="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 4: HyperPulse Energy -->
+          <div class="portfolio-item portfolio-card group cursor-pointer reveal" data-category="social-media" data-project-id="hyperpulse">
+            <div class="portfolio-img-container h-64 relative flex items-center justify-center p-8" style="background: linear-gradient(135deg, #831843 0%, #db2777 50%, #f43f5e 100%);">
+              <div class="text-center">
+                <div class="text-3xl font-black text-white font-heading mb-1 group-hover:scale-105 transition-transform">HYPERPULSE</div>
+                <div class="text-[10px] uppercase tracking-[0.3em] text-pink-200">Viral Short-Form Content</div>
+              </div>
+              <span class="absolute top-4 left-4 px-3 py-1 text-[11px] font-bold rounded-full bg-black/40 text-pink-300 backdrop-blur-md border border-pink-500/30">
+                Social Media
+              </span>
+              <span class="absolute bottom-4 right-4 px-3 py-1 text-xs font-extrabold rounded-full bg-pink-400 text-slate-950 shadow-md">
+                4.8M Views
+              </span>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center justify-between text-xs text-slate-500 dark:text-slate-400 mb-1">
+                <span>Beverage & Gen-Z</span>
+                <span class="font-semibold text-pink-600 dark:text-pink-400">Case Study</span>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 dark:text-white font-heading group-hover:text-pink-600 dark:group-hover:text-pink-400 transition-colors">
+                HyperPulse Energy
+              </h3>
+              <p class="text-slate-600 dark:text-slate-400 text-xs mt-2 line-clamp-2">
+                TikTok and Reels content machine, creator seeding, and viral challenge campaigns.
+              </p>
+              <div class="mt-4 pt-4 border-t border-slate-100 dark:border-white/5 flex items-center justify-between text-xs text-pink-600 dark:text-pink-400 font-bold">
+                <span>View Full Case Study</span>
+                <i data-lucide="arrow-up-right" class="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 5: Kroma Studio -->
+          <div class="portfolio-item portfolio-card group cursor-pointer reveal reveal-delay-1" data-category="branding" data-project-id="kroma">
+            <div class="portfolio-img-container h-64 relative flex items-center justify-center p-8" style="background: linear-gradient(135deg, #09090b 0%, #1e293b 60%, #38bdf8 100%);">
+              <div class="text-center">
+                <div class="text-3xl font-light tracking-widest text-white font-heading mb-1 group-hover:scale-105 transition-transform">K R O M A</div>
+                <div class="text-[10px] uppercase tracking-[0.3em] text-sky-200">Architecture Identity</div>
+              </div>
+              <span class="absolute top-4 left-4 px-3 py-1 text-[11px] font-bold rounded-full bg-black/40 text-sky-300 backdrop-blur-md border border-sky-500/30">
+                Branding
+              </span>
+              <span class="absolute bottom-4 right-4 px-3 py-1 text-xs font-extrabold rounded-full bg-sky-400 text-slate-950 shadow-md">
+                +210% Inquiries
+              </span>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center justify-between text-xs text-slate-500 dark:text-slate-400 mb-1">
+                <span>Architecture Studio</span>
+                <span class="font-semibold text-sky-600 dark:text-sky-400">Case Study</span>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 dark:text-white font-heading group-hover:text-sky-600 dark:group-hover:text-sky-400 transition-colors">
+                Kroma Design Studio
+              </h3>
+              <p class="text-slate-600 dark:text-slate-400 text-xs mt-2 line-clamp-2">
+                Bespoke typography, luxury print editorial guidelines, and interactive digital portfolio.
+              </p>
+              <div class="mt-4 pt-4 border-t border-slate-100 dark:border-white/5 flex items-center justify-between text-xs text-sky-600 dark:text-sky-400 font-bold">
+                <span>View Full Case Study</span>
+                <i data-lucide="arrow-up-right" class="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 6: Zenith Health -->
+          <div class="portfolio-item portfolio-card group cursor-pointer reveal reveal-delay-2" data-category="advertising" data-project-id="zenith">
+            <div class="portfolio-img-container h-64 relative flex items-center justify-center p-8" style="background: linear-gradient(135deg, #1e1b4b 0%, #4338ca 50%, #06b6d4 100%);">
+              <div class="text-center">
+                <div class="text-3xl font-extrabold text-white font-heading mb-1 group-hover:scale-105 transition-transform">ZENITH</div>
+                <div class="text-[10px] uppercase tracking-[0.3em] text-cyan-200">Paid Acquisition Scaling</div>
+              </div>
+              <span class="absolute top-4 left-4 px-3 py-1 text-[11px] font-bold rounded-full bg-black/40 text-cyan-300 backdrop-blur-md border border-cyan-500/30">
+                Advertising
+              </span>
+              <span class="absolute bottom-4 right-4 px-3 py-1 text-xs font-extrabold rounded-full bg-emerald-400 text-slate-950 shadow-md">
+                4.2X ROAS
+              </span>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center justify-between text-xs text-slate-500 dark:text-slate-400 mb-1">
+                <span>Telehealth & SaaS</span>
+                <span class="font-semibold text-cyan-600 dark:text-cyan-400">Case Study</span>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 dark:text-white font-heading group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors">
+                Zenith Health Platform
+              </h3>
+              <p class="text-slate-600 dark:text-slate-400 text-xs mt-2 line-clamp-2">
+                Omnichannel Google & Meta performance ads scaling to 3,200+ monthly subscribers.
+              </p>
+              <div class="mt-4 pt-4 border-t border-slate-100 dark:border-white/5 flex items-center justify-between text-xs text-cyan-600 dark:text-cyan-400 font-bold">
+                <span>View Full Case Study</span>
+                <i data-lucide="arrow-up-right" class="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"></i>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         5. WHY CHOOSE US (BENTO GRID)
+         ========================================================================== -->
+    <section id="why-us" class="py-24 relative overflow-hidden bg-white dark:bg-[#07080d]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4 reveal">
+          <span class="px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-pink-700 dark:text-pink-400 bg-pink-50 dark:bg-pink-950/60 border border-pink-200 dark:border-pink-500/30">
+            The NEXURA Advantage
+          </span>
+          <h2 class="text-3xl sm:text-5xl font-black tracking-tight font-heading text-slate-900 dark:text-white">
+            WHY VISIONARY BRANDS <span class="text-gradient-fire">CHOOSE US</span>
+          </h2>
+          <p class="text-slate-600 dark:text-slate-400 text-base sm:text-lg">
+            We reject the outdated agency model. No bloated retainers, no cookie-cutter templates, no excuses — just pure creative execution and measurable business growth.
+          </p>
+        </div>
+
+        <!-- 6 Pillars Bento Grid -->
+        <div class="grid md:grid-cols-3 gap-6">
+          
+          <!-- Card 1: Dual Power -->
+          <div class="bento-card p-8 reveal">
+            <div class="bento-glow-spot bg-violet-500"></div>
+            <div class="w-12 h-12 rounded-xl bg-violet-100 dark:bg-violet-600/20 border border-violet-200 dark:border-violet-500/30 flex items-center justify-center text-violet-700 dark:text-violet-400 mb-6">
+              <i data-lucide="sparkle" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white font-heading mb-3">Creative + Marketing Dual Power</h3>
+            <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+              Design that doesn't just look stunning in a portfolio — it is strategically engineered to captivate attention and drive conversions.
+            </p>
+          </div>
+
+          <!-- Card 2: Data-Driven -->
+          <div class="bento-card p-8 reveal reveal-delay-1">
+            <div class="bento-glow-spot bg-cyan-500"></div>
+            <div class="w-12 h-12 rounded-xl bg-cyan-100 dark:bg-cyan-600/20 border border-cyan-200 dark:border-cyan-500/30 flex items-center justify-center text-cyan-700 dark:text-cyan-400 mb-6">
+              <i data-lucide="bar-chart-3" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white font-heading mb-3">Data-Driven Precision</h3>
+            <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+              Every creative decision and ad dollar is backed by deep analytics, audience psychographics, and continuous A/B split-testing.
+            </p>
+          </div>
+
+          <!-- Card 3: Custom Strategies -->
+          <div class="bento-card p-8 reveal reveal-delay-2">
+            <div class="bento-glow-spot bg-pink-500"></div>
+            <div class="w-12 h-12 rounded-xl bg-pink-100 dark:bg-pink-600/20 border border-pink-200 dark:border-pink-500/30 flex items-center justify-center text-pink-700 dark:text-pink-400 mb-6">
+              <i data-lucide="sliders" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white font-heading mb-3">100% Customized Strategies</h3>
+            <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+              Zero one-size-fits-all packages. We architect tailored growth blueprints designed around your unique market niche and unit economics.
+            </p>
+          </div>
+
+          <!-- Card 4: High-Quality Design -->
+          <div class="bento-card p-8 reveal">
+            <div class="bento-glow-spot bg-emerald-500"></div>
+            <div class="w-12 h-12 rounded-xl bg-emerald-100 dark:bg-emerald-600/20 border border-emerald-200 dark:border-emerald-500/30 flex items-center justify-center text-emerald-700 dark:text-emerald-400 mb-6">
+              <i data-lucide="gem" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white font-heading mb-3">Luxury-Grade Craftsmanship</h3>
+            <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+              From typography nuance to 3D motion assets, our creative team maintains the obsessive standards of top-tier global design studios.
+            </p>
+          </div>
+
+          <!-- Card 5: Fast Communication -->
+          <div class="bento-card p-8 reveal reveal-delay-1">
+            <div class="bento-glow-spot bg-amber-500"></div>
+            <div class="w-12 h-12 rounded-xl bg-amber-100 dark:bg-amber-500/20 border border-amber-200 dark:border-amber-500/30 flex items-center justify-center text-amber-700 dark:text-amber-400 mb-6">
+              <i data-lucide="zap" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white font-heading mb-3">Rapid Agile Communication</h3>
+            <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+              Direct Slack/WhatsApp access to your dedicated senior creative director. No bureaucratic account managers or days of radio silence.
+            </p>
+          </div>
+
+          <!-- Card 6: Measurable Results -->
+          <div class="bento-card p-8 reveal reveal-delay-2">
+            <div class="bento-glow-spot bg-violet-500"></div>
+            <div class="w-12 h-12 rounded-xl bg-violet-100 dark:bg-violet-600/20 border border-violet-200 dark:border-violet-500/30 flex items-center justify-center text-violet-700 dark:text-violet-400 mb-6">
+              <i data-lucide="dollar-sign" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white font-heading mb-3">Obsession with Real ROI</h3>
+            <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+              We judge success by revenue generated, CAC reduced, and pipeline closed. Vanity metrics take a backseat to bottom-line profitability.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         6. PROCESS SECTION (4-STEP TIMELINE)
+         ========================================================================== -->
+    <section id="process" class="py-24 relative bg-slate-50/70 dark:bg-[#090a10] border-t border-slate-200/80 dark:border-white/5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header -->
+        <div class="text-center max-w-3xl mx-auto mb-20 space-y-4 reveal">
+          <span class="px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-200 dark:border-emerald-500/30">
+            How We Work
+          </span>
+          <h2 class="text-3xl sm:text-5xl font-black tracking-tight font-heading text-slate-900 dark:text-white">
+            OUR 4-STEP <span class="text-gradient">GROWTH FORMULA</span>
+          </h2>
+          <p class="text-slate-600 dark:text-slate-400 text-base sm:text-lg">
+            A frictionless, battle-tested roadmap from initial audit to exponential brand scale.
+          </p>
+        </div>
+
+        <!-- 4 Steps Timeline Grid -->
+        <div class="relative">
+          <div class="timeline-line"></div>
+
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 relative z-10">
+            
+            <!-- Step 01 -->
+            <div class="glass-panel-hover glass-panel rounded-2xl p-6 text-center lg:text-left reveal">
+              <div class="w-12 h-12 rounded-full bg-violet-100 dark:bg-violet-600/30 border border-violet-400 text-violet-700 dark:text-violet-300 font-extrabold flex items-center justify-center mx-auto lg:mx-0 mb-5 font-heading text-lg shadow-sm">
+                01
+              </div>
+              <h3 class="text-xl font-black text-slate-900 dark:text-white font-heading mb-2">DISCOVER</h3>
+              <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                Understand the business, audience psychographics, competitive landscape, and primary revenue goals.
+              </p>
+              <div class="mt-4 text-xs font-bold text-violet-700 dark:text-violet-400">
+                • In-Depth Brand Audit
+              </div>
+            </div>
+
+            <!-- Step 02 -->
+            <div class="glass-panel-hover glass-panel rounded-2xl p-6 text-center lg:text-left reveal reveal-delay-1">
+              <div class="w-12 h-12 rounded-full bg-cyan-100 dark:bg-cyan-500/30 border border-cyan-400 text-cyan-700 dark:text-cyan-300 font-extrabold flex items-center justify-center mx-auto lg:mx-0 mb-5 font-heading text-lg shadow-sm">
+                02
+              </div>
+              <h3 class="text-xl font-black text-slate-900 dark:text-white font-heading mb-2">STRATEGIZE</h3>
+              <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                Build the right marketing and creative strategy, positioning roadmap, and multi-channel acquisition funnel.
+              </p>
+              <div class="mt-4 text-xs font-bold text-cyan-700 dark:text-cyan-400">
+                • Bespoke Growth Blueprint
+              </div>
+            </div>
+
+            <!-- Step 03 -->
+            <div class="glass-panel-hover glass-panel rounded-2xl p-6 text-center lg:text-left reveal reveal-delay-2">
+              <div class="w-12 h-12 rounded-full bg-pink-100 dark:bg-pink-500/30 border border-pink-400 text-pink-700 dark:text-pink-300 font-extrabold flex items-center justify-center mx-auto lg:mx-0 mb-5 font-heading text-lg shadow-sm">
+                03
+              </div>
+              <h3 class="text-xl font-black text-slate-900 dark:text-white font-heading mb-2">CREATE</h3>
+              <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                Design compelling visual assets, render 3D creatives, write persuasive copy, and execute high-impact ad campaigns.
+              </p>
+              <div class="mt-4 text-xs font-bold text-pink-700 dark:text-pink-400">
+                • Asset & Ad Production
+              </div>
+            </div>
+
+            <!-- Step 04 -->
+            <div class="glass-panel-hover glass-panel rounded-2xl p-6 text-center lg:text-left reveal reveal-delay-3">
+              <div class="w-12 h-12 rounded-full bg-emerald-100 dark:bg-emerald-500/30 border border-emerald-400 text-emerald-700 dark:text-emerald-300 font-extrabold flex items-center justify-center mx-auto lg:mx-0 mb-5 font-heading text-lg shadow-sm">
+                04
+              </div>
+              <h3 class="text-xl font-black text-slate-900 dark:text-white font-heading mb-2">GROW</h3>
+              <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                Analyze live results, continuously A/B test creatives, optimize cost per acquisition, and scale budgets profitably.
+              </p>
+              <div class="mt-4 text-xs font-bold text-emerald-700 dark:text-emerald-400">
+                • Weekly CRO & Scaling
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         7. RESULTS / CASE STUDIES SPOTLIGHT
+         ========================================================================== -->
+    <section id="case-studies" class="py-24 relative overflow-hidden bg-white dark:bg-gradient-to-b dark:from-[#07080d] dark:via-[#0b0e18] dark:to-[#07080d]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4 reveal">
+          <span class="px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-cyan-700 dark:text-cyan-300 bg-cyan-50 dark:bg-cyan-950/60 border border-cyan-200 dark:border-cyan-500/30">
+            Proven Performance
+          </span>
+          <h2 class="text-3xl sm:text-5xl font-black tracking-tight font-heading text-slate-900 dark:text-white">
+            REAL NUMBERS. <span class="text-gradient-cyan">COMPOUNDING RESULTS.</span>
+          </h2>
+          <p class="text-slate-600 dark:text-slate-400 text-base sm:text-lg">
+            See how our integrated marketing and graphic design campaigns drive undeniable commercial lift for partner brands.
+          </p>
+        </div>
+
+        <!-- Metric Highlights Banner Grid -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          
+          <div class="glass-panel border-l-4 border-violet-500 rounded-2xl p-6 reveal">
+            <div class="text-4xl sm:text-5xl font-black text-violet-600 dark:text-violet-400 font-heading">+185%</div>
+            <div class="text-sm font-bold text-slate-900 dark:text-white mt-2">Organic & Social Reach</div>
+            <p class="text-xs text-slate-600 dark:text-slate-400 mt-1">Multiplied brand footprint within 90 days of content launch.</p>
+          </div>
+
+          <div class="glass-panel border-l-4 border-cyan-500 rounded-2xl p-6 reveal reveal-delay-1">
+            <div class="text-4xl sm:text-5xl font-black text-cyan-600 dark:text-cyan-400 font-heading">+72%</div>
+            <div class="text-sm font-bold text-slate-900 dark:text-white mt-2">Qualified Lead Volume</div>
+            <p class="text-xs text-slate-600 dark:text-slate-400 mt-1">Generated via dedicated high-intent Meta & Google funnels.</p>
+          </div>
+
+          <div class="glass-panel border-l-4 border-pink-500 rounded-2xl p-6 reveal reveal-delay-2">
+            <div class="text-4xl sm:text-5xl font-black text-pink-600 dark:text-pink-400 font-heading">+140%</div>
+            <div class="text-sm font-bold text-slate-900 dark:text-white mt-2">Social Engagement</div>
+            <p class="text-xs text-slate-600 dark:text-slate-400 mt-1">Surged through viral short-form video & carousel strategies.</p>
+          </div>
+
+          <div class="glass-panel border-l-4 border-emerald-500 rounded-2xl p-6 reveal reveal-delay-3">
+            <div class="text-4xl sm:text-5xl font-black text-emerald-600 dark:text-emerald-400 font-heading">3.8X</div>
+            <div class="text-sm font-bold text-slate-900 dark:text-white mt-2">Average Return on Ad Spend</div>
+            <p class="text-xs text-slate-600 dark:text-slate-400 mt-1">Cross-account benchmark achieved across scaling clients.</p>
+          </div>
+
+        </div>
+
+        <!-- Case Study Spotlight Card -->
+        <div class="bento-card p-8 sm:p-12 relative border border-slate-200/80 dark:border-white/15 reveal">
+          <div class="grid lg:grid-cols-12 gap-8 items-center">
+            
+            <div class="lg:col-span-7 space-y-5">
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-violet-50 dark:bg-violet-950/80 border border-violet-200 dark:border-violet-500/40 text-violet-800 dark:text-violet-300 text-xs font-bold">
+                <i data-lucide="award" class="w-3.5 h-3.5 text-violet-600"></i> Featured Growth Case Study
+              </div>
+              <h3 class="text-2xl sm:text-4xl font-extrabold text-slate-900 dark:text-white font-heading">
+                Scaling Velox Kinetic to 4.8X ROAS in 90 Days
+              </h3>
+              <p class="text-slate-600 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
+                By restructuring their paid funnel, deploying 40+ high-energy 3D video ad variations, and overhauling their brand visual identity, we cut acquisition costs by 38% while scaling monthly revenue 3.4X.
+              </p>
+              
+              <div class="flex flex-wrap gap-2.5 pt-2">
+                <span class="px-3 py-1 rounded-md bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-xs text-slate-700 dark:text-slate-300 font-semibold">Meta Ads</span>
+                <span class="px-3 py-1 rounded-md bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-xs text-slate-700 dark:text-slate-300 font-semibold">Google Ads</span>
+                <span class="px-3 py-1 rounded-md bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-xs text-slate-700 dark:text-slate-300 font-semibold">3D Graphic Design</span>
+                <span class="px-3 py-1 rounded-md bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-xs text-slate-700 dark:text-slate-300 font-semibold">Landing Page CRO</span>
+              </div>
+
+              <div class="pt-4">
+                <a href="#contact" class="btn-primary px-6 py-3 text-xs sm:text-sm">
+                  Get a Customized Growth Plan For Your Brand →
+                </a>
+              </div>
+            </div>
+
+            <div class="lg:col-span-5 bg-slate-50 dark:bg-white/5 rounded-2xl p-6 border border-slate-200/80 dark:border-white/10">
+              <h4 class="text-xs uppercase tracking-widest font-bold text-slate-700 dark:text-slate-400 mb-4">Growth Breakdown</h4>
+              <div class="space-y-4 text-sm">
+                <div>
+                  <div class="flex justify-between font-bold mb-1">
+                    <span class="text-slate-700 dark:text-slate-300">Target Audience Penetration</span>
+                    <span class="text-cyan-600 dark:text-cyan-400">88%</span>
+                  </div>
+                  <div class="w-full h-2 rounded-full bg-slate-200 dark:bg-slate-800 overflow-hidden">
+                    <div class="h-full bg-gradient-to-r from-violet-600 to-cyan-500 rounded-full" style="width: 88%"></div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="flex justify-between font-bold mb-1">
+                    <span class="text-slate-700 dark:text-slate-300">Conversion Rate (Before vs After)</span>
+                    <span class="text-emerald-600 dark:text-emerald-400">1.4% → 4.8%</span>
+                  </div>
+                  <div class="w-full h-2 rounded-full bg-slate-200 dark:bg-slate-800 overflow-hidden">
+                    <div class="h-full bg-gradient-to-r from-cyan-500 to-emerald-500 rounded-full" style="width: 78%"></div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="flex justify-between font-bold mb-1">
+                    <span class="text-slate-700 dark:text-slate-300">Ad Creative Click-Through-Rate</span>
+                    <span class="text-pink-600 dark:text-pink-400">3.4X Industry Avg</span>
+                  </div>
+                  <div class="w-full h-2 rounded-full bg-slate-200 dark:bg-slate-800 overflow-hidden">
+                    <div class="h-full bg-gradient-to-r from-pink-500 to-violet-600 rounded-full" style="width: 92%"></div>
+                  </div>
+                </div>
+              </div>
+              
+              <p class="text-[10px] text-slate-500 mt-6 italic text-center">
+                *Demo/benchmark metrics curated from client cohort launch studies.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         8. INTERACTIVE PROJECT & ROI ESTIMATOR (CONVERSION TOOL)
+         ========================================================================== -->
+    <section id="estimator" class="py-24 relative bg-slate-50/80 dark:bg-[#07080d] border-t border-slate-200/80 dark:border-white/5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4 reveal">
+          <span class="px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-violet-700 dark:text-violet-300 bg-violet-50 dark:bg-violet-950/60 border border-violet-200 dark:border-violet-500/30">
+            Interactive Tool
+          </span>
+          <h2 class="text-3xl sm:text-5xl font-black tracking-tight font-heading text-slate-900 dark:text-white">
+            ESTIMATE YOUR <span class="text-gradient">CAMPAIGN POTENTIAL</span>
+          </h2>
+          <p class="text-slate-600 dark:text-slate-400 text-base sm:text-lg">
+            Select your desired services and monthly investment tier to preview your projected reach, deliverables, and team allocation.
+          </p>
+        </div>
+
+        <!-- Interactive Calculator Card -->
+        <div class="max-w-4xl mx-auto bento-card p-6 sm:p-10 border border-slate-200/80 dark:border-violet-500/30 shadow-xl reveal bg-white dark:bg-[#0d0f18]">
+          <div class="space-y-8">
+            
+            <!-- Step 1: Select Desired Services -->
+            <div>
+              <label class="block text-sm font-bold text-slate-900 dark:text-white uppercase tracking-wider mb-3">
+                1. Select Services Required (Multi-Select)
+              </label>
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                <div class="calc-chip estimator-service-chip active p-3.5 rounded-xl text-center text-xs font-bold" data-service="marketing">
+                  <i data-lucide="target" class="w-4 h-4 mx-auto mb-1 text-cyan-600"></i> Digital Marketing
+                </div>
+                <div class="calc-chip estimator-service-chip active p-3.5 rounded-xl text-center text-xs font-bold" data-service="design">
+                  <i data-lucide="palette" class="w-4 h-4 mx-auto mb-1 text-pink-600"></i> Graphic Design
+                </div>
+                <div class="calc-chip estimator-service-chip p-3.5 rounded-xl text-center text-xs font-bold" data-service="branding">
+                  <i data-lucide="crown" class="w-4 h-4 mx-auto mb-1 text-amber-500"></i> Brand Strategy
+                </div>
+                <div class="calc-chip estimator-service-chip p-3.5 rounded-xl text-center text-xs font-bold" data-service="social">
+                  <i data-lucide="share-2" class="w-4 h-4 mx-auto mb-1 text-emerald-600"></i> Social Media Mgmt
+                </div>
+                <div class="calc-chip estimator-service-chip p-3.5 rounded-xl text-center text-xs font-bold" data-service="seo">
+                  <i data-lucide="search" class="w-4 h-4 mx-auto mb-1 text-violet-600"></i> SEO & Content
+                </div>
+                <div class="calc-chip estimator-service-chip p-3.5 rounded-xl text-center text-xs font-bold" data-service="video">
+                  <i data-lucide="video" class="w-4 h-4 mx-auto mb-1 text-sky-600"></i> 3D / Reels Video
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 2: Select Monthly Investment Tier -->
+            <div>
+              <label class="block text-sm font-bold text-slate-900 dark:text-white uppercase tracking-wider mb-3">
+                2. Select Monthly Growth Investment Tier
+              </label>
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                <div class="calc-chip estimator-budget-chip p-4 rounded-xl text-center cursor-pointer" data-budget="starter">
+                  <div class="text-xs text-slate-500">Starter Tier</div>
+                  <div class="text-lg font-black text-slate-900 dark:text-white font-heading mt-1">$1.5K – $3K / mo</div>
+                  <div class="text-[11px] text-slate-500 mt-1">Early-stage traction</div>
+                </div>
+
+                <div class="calc-chip estimator-budget-chip active p-4 rounded-xl text-center cursor-pointer border-violet-600 bg-violet-50 dark:bg-violet-600/20 text-violet-900" data-budget="growth">
+                  <div class="text-xs text-violet-700 dark:text-violet-300 font-bold">Growth Tier (Popular)</div>
+                  <div class="text-lg font-black text-violet-950 dark:text-white font-heading mt-1">$3K – $7.5K / mo</div>
+                  <div class="text-[11px] text-violet-700 dark:text-slate-300 mt-1">Aggressive market scaling</div>
+                </div>
+
+                <div class="calc-chip estimator-budget-chip p-4 rounded-xl text-center cursor-pointer" data-budget="scale">
+                  <div class="text-xs text-slate-500">Enterprise Scale</div>
+                  <div class="text-lg font-black text-slate-900 dark:text-white font-heading mt-1">$7.5K – $15K+ / mo</div>
+                  <div class="text-[11px] text-slate-500 mt-1">Category dominance</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dynamic Projected Output Dashboard -->
+            <div class="bg-gradient-to-r from-violet-50/90 via-slate-50 to-cyan-50/90 dark:from-violet-950/40 dark:via-slate-900/60 dark:to-cyan-950/40 rounded-2xl p-6 border border-slate-200 dark:border-white/10 space-y-6">
+              <div class="flex items-center justify-between border-b border-slate-200/80 dark:border-white/10 pb-4">
+                <span class="text-xs font-bold uppercase tracking-widest text-slate-700 dark:text-slate-300">Estimated Campaign Projections</span>
+                <span class="text-xs font-bold text-emerald-700 dark:text-emerald-400 flex items-center gap-1">
+                  <i data-lucide="zap" class="w-3.5 h-3.5"></i> High-Impact Sprint
+                </span>
+              </div>
+
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
+                <div>
+                  <div class="text-xs text-slate-500 dark:text-slate-400">Est. Monthly Reach</div>
+                  <div id="est-reach" class="text-2xl font-black text-cyan-700 dark:text-cyan-400 font-heading mt-1">270K+</div>
+                </div>
+                <div>
+                  <div class="text-xs text-slate-500 dark:text-slate-400">Target Monthly Leads</div>
+                  <div id="est-leads" class="text-2xl font-black text-violet-700 dark:text-violet-400 font-heading mt-1">85+ / mo</div>
+                </div>
+                <div>
+                  <div class="text-xs text-slate-500 dark:text-slate-400">Target ROAS Multiplier</div>
+                  <div id="est-roas" class="text-2xl font-black text-emerald-700 dark:text-emerald-400 font-heading mt-1">3.8X</div>
+                </div>
+                <div>
+                  <div class="text-xs text-slate-500 dark:text-slate-400">Time to 1st Launch</div>
+                  <div id="est-timeline" class="text-2xl font-black text-pink-700 dark:text-pink-400 font-heading mt-1">7 Business Days</div>
+                </div>
+              </div>
+
+              <div class="pt-4 border-t border-slate-200/80 dark:border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div class="text-xs text-slate-700 dark:text-slate-300">
+                  <span class="font-bold text-slate-900 dark:text-white">Dedicated Team: </span>
+                  <span id="est-team" class="text-slate-600 dark:text-slate-400">Creative Director, Senior Media Buyer, Motion Designer</span>
+                </div>
+                
+                <button id="est-apply-btn" class="btn-primary w-full sm:w-auto px-6 py-2.5 text-xs uppercase tracking-wider font-bold">
+                  Lock in Strategy & Apply →
+                </button>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         9. CLIENT TESTIMONIALS & REVIEWS
+         ========================================================================== -->
+    <section id="testimonials" class="py-24 relative bg-white dark:bg-[#090b12] border-t border-slate-200/80 dark:border-white/5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4 reveal">
+          <span class="px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-amber-700 dark:text-amber-400 bg-amber-50 dark:bg-amber-950/60 border border-amber-200 dark:border-amber-500/30">
+            Client Success Stories
+          </span>
+          <h2 class="text-3xl sm:text-5xl font-black tracking-tight font-heading text-slate-900 dark:text-white">
+            WHAT FOUNDERS SAY <span class="text-gradient">ABOUT NEXURA</span>
+          </h2>
+          <p class="text-slate-600 dark:text-slate-400 text-base sm:text-lg">
+            Real feedback from high-growth business leaders who trusted us with their brand identity and digital marketing.
+          </p>
+        </div>
+
+        <!-- Testimonial Cards Grid -->
+        <div class="grid md:grid-cols-3 gap-8">
+          
+          <!-- Testimonial 1 -->
+          <div class="glass-panel rounded-2xl p-8 flex flex-col justify-between reveal">
+            <div>
+              <div class="flex text-amber-500 mb-4">
+                <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+              </div>
+              <p class="text-slate-700 dark:text-slate-200 text-sm sm:text-base italic leading-relaxed mb-6">
+                "NEXURA completely revitalized our visual brand and took our Meta ad ROAS from 1.6x to over 4.8x. Their creative team moves at lightning speed without sacrificing quality."
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-4 border-t border-slate-200/80 dark:border-white/10">
+              <div class="w-11 h-11 rounded-full bg-gradient-to-tr from-violet-600 to-cyan-500 flex items-center justify-center font-bold text-white text-sm">
+                MK
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-slate-900 dark:text-white">Marcus King</h4>
+                <p class="text-xs text-slate-500">Founder & CEO, Velox Kinetic</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="glass-panel rounded-2xl p-8 flex flex-col justify-between reveal reveal-delay-1">
+            <div>
+              <div class="flex text-amber-500 mb-4">
+                <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+              </div>
+              <p class="text-slate-700 dark:text-slate-200 text-sm sm:text-base italic leading-relaxed mb-6">
+                "The graphic design package and packaging mockups they produced for our organic skincare line were so compelling that we secured national retail distribution in our first quarter."
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-4 border-t border-slate-200/80 dark:border-white/10">
+              <div class="w-11 h-11 rounded-full bg-gradient-to-tr from-emerald-600 to-cyan-500 flex items-center justify-center font-bold text-white text-sm">
+                SL
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-slate-900 dark:text-white">Sophia Laurent</h4>
+                <p class="text-xs text-slate-500">Creative Director, Aura Botanicals</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="glass-panel rounded-2xl p-8 flex flex-col justify-between reveal reveal-delay-2">
+            <div>
+              <div class="flex text-amber-500 mb-4">
+                <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+              </div>
+              <p class="text-slate-700 dark:text-slate-200 text-sm sm:text-base italic leading-relaxed mb-6">
+                "Finding an agency that truly excels at BOTH high-end creative graphic design and hardcore performance marketing analytics is rare. NEXURA is that unicorn partner."
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-4 border-t border-slate-200/80 dark:border-white/10">
+              <div class="w-11 h-11 rounded-full bg-gradient-to-tr from-pink-600 to-violet-600 flex items-center justify-center font-bold text-white text-sm">
+                DR
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-slate-900 dark:text-white">David Reynolds</h4>
+                <p class="text-xs text-slate-500">Managing Partner, NovaCrest Capital</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         10. HIGH-IMPACT FINAL CTA SECTION
+         ========================================================================== -->
+    <section class="py-24 relative overflow-hidden bg-slate-50/50 dark:bg-[#07080d]">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+        <div class="border-gradient-wrapper p-10 sm:p-16 shadow-2xl reveal bg-white dark:bg-[#0d0f18]">
+          
+          <span class="inline-block px-4 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-widest text-cyan-800 dark:text-cyan-300 bg-cyan-50 dark:bg-cyan-950/80 border border-cyan-200 dark:border-cyan-500/40 mb-6">
+            ✦ Stop Being Ignored. Start Dominating.
+          </span>
+
+          <h2 class="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight font-heading leading-tight text-slate-900 dark:text-white mb-6">
+            READY TO GROW <span class="text-gradient">YOUR BRAND?</span>
+          </h2>
+
+          <p class="text-slate-600 dark:text-slate-300 text-base sm:text-xl max-w-2xl mx-auto leading-relaxed mb-10">
+            Let's build a brand and marketing strategy that gets attention and drives real business.
+          </p>
+
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a href="#contact" class="btn-primary w-full sm:w-auto px-9 py-4 text-base font-bold shadow-xl shadow-violet-600/30">
+              <span>Start a Project</span>
+              <i data-lucide="sparkles" class="w-5 h-5"></i>
+            </a>
+            <a href="tel:+18005550199" class="btn-secondary w-full sm:w-auto px-8 py-4 text-base font-bold">
+              <i data-lucide="phone-outgoing" class="w-4 h-4 text-violet-600"></i>
+              <span>Talk to Us</span>
+            </a>
+          </div>
+
+          <div class="mt-8 text-xs text-slate-500 dark:text-slate-400">
+            🔒 No hard sales pitch. Free 30-minute tailored growth breakdown.
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         11. CONVERSION CONTACT SECTION & FORM
+         ========================================================================== -->
+    <section id="contact" class="py-24 relative bg-white dark:bg-[#06070b] border-t border-slate-200/80 dark:border-white/5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid lg:grid-cols-12 gap-12">
+          
+          <!-- Contact Left: Agency Direct Info -->
+          <div class="lg:col-span-5 space-y-8 reveal">
+            <div>
+              <span class="px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-violet-700 dark:text-violet-300 bg-violet-50 dark:bg-violet-950/60 border border-violet-200 dark:border-violet-500/30">
+                Let's Build Something Iconic
+              </span>
+              <h2 class="text-3xl sm:text-5xl font-black tracking-tight font-heading mt-3 text-slate-900 dark:text-white">
+                START YOUR <span class="text-gradient">PROJECT</span>
+              </h2>
+              <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base mt-3 leading-relaxed">
+                Tell us about your brand goals. Our senior strategy team will analyze your requirements and provide a customized proposal within 2 hours.
+              </p>
+            </div>
+
+            <!-- Direct Contact Channels -->
+            <div class="space-y-4">
+              
+              <!-- WhatsApp -->
+              <a href="#" class="direct-whatsapp-btn glass-panel p-4 rounded-2xl flex items-center justify-between group hover:border-emerald-500/50 transition-colors">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-emerald-50 dark:bg-emerald-600/20 text-emerald-600 dark:text-emerald-400 flex items-center justify-center">
+                    <i data-lucide="message-circle" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <div class="text-xs text-slate-500">Direct WhatsApp</div>
+                    <div class="text-sm font-bold text-slate-900 dark:text-white group-hover:text-emerald-600">+1 (800) 555-0199</div>
+                  </div>
+                </div>
+                <span class="text-xs font-bold text-emerald-600 dark:text-emerald-400 flex items-center gap-1">
+                  Chat Now <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                </span>
+              </a>
+
+              <!-- Email -->
+              <a href="mailto:hello@nexuracreative.com" class="glass-panel p-4 rounded-2xl flex items-center justify-between group hover:border-cyan-500/50 transition-colors">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-cyan-50 dark:bg-cyan-600/20 text-cyan-600 dark:text-cyan-400 flex items-center justify-center">
+                    <i data-lucide="mail" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <div class="text-xs text-slate-500">Official Email</div>
+                    <div class="text-sm font-bold text-slate-900 dark:text-white group-hover:text-cyan-600">hello@nexuracreative.com</div>
+                  </div>
+                </div>
+                <span class="text-xs font-bold text-cyan-600 dark:text-cyan-400 flex items-center gap-1">
+                  Email Us <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                </span>
+              </a>
+
+              <!-- Phone -->
+              <a href="tel:+18005550199" class="glass-panel p-4 rounded-2xl flex items-center justify-between group hover:border-violet-500/50 transition-colors">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-violet-50 dark:bg-violet-600/20 text-violet-600 dark:text-violet-400 flex items-center justify-center">
+                    <i data-lucide="phone" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <div class="text-xs text-slate-500">Phone Support</div>
+                    <div class="text-sm font-bold text-slate-900 dark:text-white group-hover:text-violet-600">+1 (800) 555-0199</div>
+                  </div>
+                </div>
+                <span class="text-xs font-bold text-violet-600 dark:text-violet-400 flex items-center gap-1">
+                  Call Studio <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                </span>
+              </a>
+
+            </div>
+
+            <!-- Social Media Handles -->
+            <div>
+              <h4 class="text-xs uppercase tracking-widest font-bold text-slate-700 dark:text-slate-400 mb-3">Connect On Social</h4>
+              <div class="flex items-center gap-3">
+                <a href="#" class="w-10 h-10 rounded-xl bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 hover:bg-violet-600 hover:text-white flex items-center justify-center text-slate-700 dark:text-slate-300 transition-all" aria-label="Instagram">
+                  <i data-lucide="instagram" class="w-5 h-5"></i>
+                </a>
+                <a href="#" class="w-10 h-10 rounded-xl bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 hover:bg-cyan-600 hover:text-white flex items-center justify-center text-slate-700 dark:text-slate-300 transition-all" aria-label="LinkedIn">
+                  <i data-lucide="linkedin" class="w-5 h-5"></i>
+                </a>
+                <a href="#" class="w-10 h-10 rounded-xl bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 hover:bg-pink-600 hover:text-white flex items-center justify-center text-slate-700 dark:text-slate-300 transition-all" aria-label="Dribbble">
+                  <i data-lucide="dribbble" class="w-5 h-5"></i>
+                </a>
+                <a href="#" class="w-10 h-10 rounded-xl bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 hover:bg-sky-500 hover:text-white flex items-center justify-center text-slate-700 dark:text-slate-300 transition-all" aria-label="Twitter">
+                  <i data-lucide="twitter" class="w-5 h-5"></i>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Contact Right: High-Conversion Interactive Inquiry Form -->
+          <div class="lg:col-span-7 reveal reveal-delay-1">
+            <div class="glass-panel rounded-3xl p-6 sm:p-10 border border-slate-200/80 dark:border-white/15 shadow-xl bg-white dark:bg-[#0d0f18]">
+              
+              <form id="agency-contact-form" class="space-y-6" novalidate>
+                
+                <!-- Row 1: Name & Business Name -->
+                <div class="grid sm:grid-cols-2 gap-5">
+                  <div>
+                    <label for="contact-name" class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2">
+                      Full Name *
+                    </label>
+                    <input type="text" id="contact-name" name="name" placeholder="Alex Morgan" required
+                           class="w-full px-4 py-3.5 rounded-xl bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:border-violet-600 focus:ring-1 focus:ring-violet-600 transition-all text-sm">
+                  </div>
+                  <div>
+                    <label for="contact-company" class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2">
+                      Business / Brand Name *
+                    </label>
+                    <input type="text" id="contact-company" name="company" placeholder="Acme Brands Inc." required
+                           class="w-full px-4 py-3.5 rounded-xl bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:border-violet-600 focus:ring-1 focus:ring-violet-600 transition-all text-sm">
+                  </div>
+                </div>
+
+                <!-- Row 2: Email & Phone -->
+                <div class="grid sm:grid-cols-2 gap-5">
+                  <div>
+                    <label for="contact-email" class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2">
+                      Work Email *
+                    </label>
+                    <input type="email" id="contact-email" name="email" placeholder="alex@company.com" required
+                           class="w-full px-4 py-3.5 rounded-xl bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:border-violet-600 focus:ring-1 focus:ring-violet-600 transition-all text-sm">
+                  </div>
+                  <div>
+                    <label for="contact-phone" class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2">
+                      Phone Number *
+                    </label>
+                    <input type="tel" id="contact-phone" name="phone" placeholder="+1 (555) 000-0000" required
+                           class="w-full px-4 py-3.5 rounded-xl bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:border-violet-600 focus:ring-1 focus:ring-violet-600 transition-all text-sm">
+                  </div>
+                </div>
+
+                <!-- Row 3: Service Required (Multi-Select Chips) -->
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2.5">
+                    Service(s) Required *
+                  </label>
+                  <div class="flex flex-wrap gap-2">
+                    <button type="button" class="service-pill-btn active px-3.5 py-2 rounded-xl text-xs font-bold border border-violet-600 bg-violet-600 text-white transition-all">
+                      <input type="checkbox" checked class="hidden"> Digital Marketing
+                    </button>
+                    <button type="button" class="service-pill-btn active px-3.5 py-2 rounded-xl text-xs font-bold border border-violet-600 bg-violet-600 text-white transition-all">
+                      <input type="checkbox" checked class="hidden"> Graphic Design
+                    </button>
+                    <button type="button" class="service-pill-btn px-3.5 py-2 rounded-xl text-xs font-semibold border border-slate-200 dark:border-white/10 bg-slate-50 dark:bg-white/5 text-slate-700 dark:text-slate-300 transition-all">
+                      <input type="checkbox" class="hidden"> Social Media Management
+                    </button>
+                    <button type="button" class="service-pill-btn px-3.5 py-2 rounded-xl text-xs font-semibold border border-slate-200 dark:border-white/10 bg-slate-50 dark:bg-white/5 text-slate-700 dark:text-slate-300 transition-all">
+                      <input type="checkbox" class="hidden"> Brand Strategy & Identity
+                    </button>
+                    <button type="button" class="service-pill-btn px-3.5 py-2 rounded-xl text-xs font-semibold border border-slate-200 dark:border-white/10 bg-slate-50 dark:bg-white/5 text-slate-700 dark:text-slate-300 transition-all">
+                      <input type="checkbox" class="hidden"> SEO & Performance Ads
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Row 4: Budget Selection -->
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2.5">
+                    Estimated Monthly Budget *
+                  </label>
+                  <div class="grid grid-cols-3 gap-2 text-center text-xs">
+                    <label class="cursor-pointer border border-slate-200 dark:border-white/10 rounded-xl p-3 bg-slate-50 dark:bg-white/5 has-[:checked]:border-violet-600 has-[:checked]:bg-violet-50 dark:has-[:checked]:bg-violet-600/20 transition-all">
+                      <input type="radio" name="budget" value="starter" class="hidden">
+                      <div class="font-bold text-slate-900 dark:text-white">$1.5K - $3K</div>
+                      <div class="text-[10px] text-slate-500">Starter</div>
+                    </label>
+                    <label class="cursor-pointer border border-violet-600 rounded-xl p-3 bg-violet-50 dark:bg-violet-600/20 has-[:checked]:border-violet-600 has-[:checked]:bg-violet-50 dark:has-[:checked]:bg-violet-600/20 transition-all">
+                      <input type="radio" name="budget" value="growth" checked class="hidden">
+                      <div class="font-bold text-violet-900 dark:text-white">$3K - $7.5K</div>
+                      <div class="text-[10px] text-violet-700 dark:text-violet-300 font-bold">Growth</div>
+                    </label>
+                    <label class="cursor-pointer border border-slate-200 dark:border-white/10 rounded-xl p-3 bg-slate-50 dark:bg-white/5 has-[:checked]:border-violet-600 has-[:checked]:bg-violet-50 dark:has-[:checked]:bg-violet-600/20 transition-all">
+                      <input type="radio" name="budget" value="scale" class="hidden">
+                      <div class="font-bold text-slate-900 dark:text-white">$7.5K - $15K+</div>
+                      <div class="text-[10px] text-slate-500">Scale</div>
+                    </label>
+                  </div>
+                </div>
+
+                <!-- Row 5: Project Details -->
+                <div>
+                  <label for="contact-details" class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2">
+                    Project Details & Goals
+                  </label>
+                  <textarea id="contact-details" name="details" rows="4" placeholder="Briefly describe your current marketing challenges, target audience, and primary objectives..."
+                            class="w-full px-4 py-3.5 rounded-xl bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:border-violet-600 focus:ring-1 focus:ring-violet-600 transition-all text-sm"></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <div>
+                  <button type="submit" id="form-submit-btn" class="btn-primary w-full py-4 text-base font-bold shadow-xl shadow-violet-600/30 cursor-pointer">
+                    <span>Send Inquiry</span>
+                    <i data-lucide="send" class="w-5 h-5"></i>
+                  </button>
+                  <p class="text-[11px] text-slate-500 text-center mt-3">
+                    By submitting, you agree to our <a href="#" data-open-privacy class="underline hover:text-slate-700 dark:hover:text-slate-300">Privacy Policy</a>. We respect your confidentiality.
+                  </p>
+                </div>
+
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+
+  <!-- ==========================================================================
+       12. COMPREHENSIVE FOOTER
+       ========================================================================== -->
+  <footer class="bg-slate-950 border-t border-slate-800 pt-16 pb-12 text-slate-400 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Footer Top Grid -->
+      <div class="grid grid-cols-2 md:grid-cols-12 gap-8 pb-12 border-b border-slate-800">
+        
+        <!-- Brand Summary -->
+        <div class="col-span-2 md:col-span-4 space-y-4">
+          <a href="#" class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-violet-600 to-cyan-500 flex items-center justify-center font-bold text-white text-lg">
+              N
+            </div>
+            <span class="text-xl font-extrabold text-white font-heading">NEXURA<span class="text-cyan-400">.</span></span>
+          </a>
+          <p class="text-xs sm:text-sm text-slate-400 leading-relaxed max-w-sm">
+            High-impact digital marketing, graphic design, and brand identity solutions engineered for businesses ready to dominate their category.
+          </p>
+          <div class="text-xs text-slate-500">
+            HQ: 540 Madison Ave, New York, NY • Global Remote Studio
+          </div>
+        </div>
+
+        <!-- Services Sitemap -->
+        <div class="col-span-1 md:col-span-3 space-y-3">
+          <h4 class="text-xs uppercase tracking-widest font-bold text-white">Services</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#services" class="hover:text-cyan-400 transition-colors">Social Media Marketing</a></li>
+            <li><a href="#services" class="hover:text-cyan-400 transition-colors">Google & Meta Ad Scaling</a></li>
+            <li><a href="#services" class="hover:text-cyan-400 transition-colors">Logo & Visual Identity</a></li>
+            <li><a href="#services" class="hover:text-cyan-400 transition-colors">Packaging & Print Design</a></li>
+            <li><a href="#services" class="hover:text-cyan-400 transition-colors">Lead Gen Funnels & CRO</a></li>
+            <li><a href="#services" class="hover:text-cyan-400 transition-colors">Search Engine Optimization</a></li>
+          </ul>
+        </div>
+
+        <!-- Company Sitemap -->
+        <div class="col-span-1 md:col-span-2 space-y-3">
+          <h4 class="text-xs uppercase tracking-widest font-bold text-white">Company</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#work" class="hover:text-cyan-400 transition-colors">Portfolio</a></li>
+            <li><a href="#why-us" class="hover:text-cyan-400 transition-colors">Why Choose Us</a></li>
+            <li><a href="#process" class="hover:text-cyan-400 transition-colors">Our Process</a></li>
+            <li><a href="#case-studies" class="hover:text-cyan-400 transition-colors">Case Studies</a></li>
+            <li><a href="#testimonials" class="hover:text-cyan-400 transition-colors">Testimonials</a></li>
+            <li><a href="#contact" class="hover:text-cyan-400 transition-colors">Careers & Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter Subscription -->
+        <div class="col-span-2 md:col-span-3 space-y-3">
+          <h4 class="text-xs uppercase tracking-widest font-bold text-white">Growth Insights</h4>
+          <p class="text-xs text-slate-400">
+            Join 8,000+ founders receiving our bi-weekly breakdown on marketing trends and creative strategy.
+          </p>
+          <form id="newsletter-form" class="space-y-2">
+            <div class="flex gap-2">
+              <input type="email" id="newsletter-email" placeholder="Enter your work email" required
+                     class="w-full px-3.5 py-2.5 rounded-lg bg-slate-900 border border-slate-800 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-violet-500">
+              <button type="submit" class="px-4 py-2.5 rounded-lg bg-violet-600 hover:bg-violet-500 text-white font-bold text-xs transition-colors">
+                Join
+              </button>
+            </div>
+            <span id="newsletter-feedback"></span>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <div>
+          © 2026 NEXURA Creative & Growth Studio. All rights reserved.
+        </div>
+        <div class="flex items-center gap-6">
+          <a href="#" data-open-privacy class="hover:text-slate-300 transition-colors">Privacy Policy</a>
+          <a href="#" data-open-terms class="hover:text-slate-300 transition-colors">Terms & Conditions</a>
+          <a href="#contact" class="hover:text-slate-300 transition-colors">Security</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- ==========================================================================
+       INTERACTIVE MODALS & FLOATING WIDGETS
+       ========================================================================== -->
+
+  <!-- 1. Portfolio Project Case Study Modal -->
+  <div id="project-modal" class="fixed inset-0 z-50 modal-backdrop hidden items-center justify-center p-4 sm:p-6 overflow-y-auto">
+    <div class="relative w-full max-w-3xl bg-white dark:bg-[#0d0f18] border border-slate-200 dark:border-white/15 rounded-3xl p-6 sm:p-8 shadow-2xl max-h-[90vh] overflow-y-auto">
+      <button id="close-project-modal" class="absolute top-5 right-5 p-2 rounded-full bg-slate-100 dark:bg-white/10 text-slate-700 dark:text-slate-300 hover:text-black dark:hover:text-white transition-all z-20" aria-label="Close project modal">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+      <div id="project-modal-body"></div>
+    </div>
+  </div>
+
+  <!-- 2. Legal / Policy Modal -->
+  <div id="legal-modal" class="fixed inset-0 z-50 modal-backdrop hidden items-center justify-center p-4 sm:p-6 overflow-y-auto">
+    <div class="relative w-full max-w-2xl bg-white dark:bg-[#0d0f18] border border-slate-200 dark:border-white/15 rounded-3xl p-6 sm:p-8 shadow-2xl">
+      <button id="close-legal-modal" class="absolute top-5 right-5 p-2 rounded-full bg-slate-100 dark:bg-white/10 text-slate-700 dark:text-slate-300 hover:text-black dark:hover:text-white" aria-label="Close modal">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+      <h3 id="legal-modal-title" class="text-2xl font-bold text-slate-900 dark:text-white font-heading mb-4">Legal Document</h3>
+      <div id="legal-modal-body" class="max-h-[60vh] overflow-y-auto pr-2"></div>
+    </div>
+  </div>
+
+  <!-- 3. Form Submission Success Modal -->
+  <div id="inquiry-success-modal" class="fixed inset-0 z-50 modal-backdrop hidden items-center justify-center p-4">
+    <div class="relative w-full max-w-md bg-white dark:bg-[#0d0f18] border border-emerald-500/40 rounded-3xl p-8 text-center shadow-2xl">
+      <div class="w-16 h-16 rounded-full bg-emerald-100 dark:bg-emerald-500/20 border border-emerald-500 text-emerald-600 dark:text-emerald-400 flex items-center justify-center mx-auto mb-4">
+        <i data-lucide="check-circle" class="w-8 h-8"></i>
+      </div>
+      <h3 class="text-2xl font-black text-slate-900 dark:text-white font-heading">Inquiry Received!</h3>
+      <p class="text-slate-600 dark:text-slate-300 text-sm mt-3 leading-relaxed">
+        Thank you, <span id="success-user-name" class="font-bold text-slate-900 dark:text-white"></span>! Our creative director and growth lead are reviewing your project goals. Expect a custom response within <strong>2 hours</strong>.
+      </p>
+      <button onclick="document.getElementById('inquiry-success-modal').classList.add('hidden')" class="btn-primary w-full py-3 text-sm mt-6 font-bold">
+        Awesome, Close
+      </button>
+    </div>
+  </div>
+
+  <!-- Floating Quick WhatsApp Button -->
+  <a href="#" class="direct-whatsapp-btn floating-whatsapp w-12 h-12 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white flex items-center justify-center shadow-xl font-bold" aria-label="Direct WhatsApp Message">
+    <i data-lucide="message-circle" class="w-6 h-6"></i>
+  </a>
+
+  <!-- Floating Back to Top Button -->
+  <button id="back-to-top" class="back-to-top w-12 h-12 rounded-full flex items-center justify-center shadow-xl backdrop-blur-md" aria-label="Scroll back to top">
+    <i data-lucide="chevron-up" class="w-6 h-6"></i>
+  </button>
+
+  <!-- JavaScript Modules -->
+  <script src="js/animations.js"></script>
+  <script src="js/portfolio.js"></script>
+  <script src="js/calculator.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
